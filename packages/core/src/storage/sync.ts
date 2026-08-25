@@ -101,40 +101,60 @@ export type StartupCheck =
   | { kind: "current" }
   | { kind: "agreed"; remote: Progress }
   | { kind: "adopt"; remote: Progress }
-  | { kind: "diverged"; remote: Progress };
+  /**
+   * `unsent` is not what makes it `diverged` — nothing is decided by it any
+   * more. It is what the two situations that now arrive here are told apart by,
+   * and so what the question must be worded and defaulted from: a device that
+   * has studied since it last synced is choosing which copy to lose, and one
+   * that has not is being offered a catch-up that costs it nothing. Told alike,
+   * the second reads as the first, and the obvious answer to the first is the
+   * one that force-pushes a week-old copy over somebody's evening.
+   *
+   * Carried rather than recomputed, because only the check knows which copy it
+   * compared. Asked again of the live session it is nearly always true —
+   * opening the app moves `updatedAt` — which would bury the case it exists to
+   * name.
+   */
+  | { kind: "diverged"; remote: Progress; unsent: boolean };
 
 /**
  * Which of the two copies to keep, decided by what would be lost.
  *
- * Four cases, and not one of them asks which clock is later:
+ * Four answers, and not one of them asks which clock is later:
  *
- * | remote moved | local unsent | answer |
- * |---|---|---|
- * | no  | no  | `current`  |
- * | no  | yes | `current` — this device pushes |
- * | yes | no  | `adopt` — silently, the ordinary morning |
- * | yes | yes | `diverged` — only a person can say |
+ * | | answer |
+ * |---|---|
+ * | no remote file | `current` |
+ * | no local copy at all | `adopt` — there is nothing here to lose |
+ * | the remote holds what we last agreed with | `current` |
+ * | the two copies say the same thing | `agreed` — mend the marker, say nothing |
+ * | anything else | `diverged` — only a person can say |
+ *
+ * **Nothing is replaced automatically unless nothing can be lost**, and only
+ * two cases prove that: a device with no copy, and two copies that are the same
+ * file bar the clock. `adopt` used to cover a third — the remote moved and
+ * lineage said this device had nothing unsent — and that one is gone, because
+ * the guard was `hasUnsent`, a lineage test standing in for a content test.
+ * A marker is a claim about a past push, and when the claim is wrong the guard
+ * is wrong in the direction that destroys a session: `GitHubStorage` held the
+ * caller's live object as `known`, called every later push a no-op, and filed a
+ * marker naming a file GitHub never had. `remoteMoved` was then true and
+ * `hasUnsent` false, and a device with a week in it adopted a stale remote
+ * without a word. The aliasing is fixed; the rule that a destructive answer may
+ * not rest on a guard that can be quietly false is the part worth keeping.
+ *
+ * What it costs is one question on the phone-then-laptop morning, which used to
+ * be silent. That is the trade taken deliberately: `agreed` keeps the genuinely
+ * empty case quiet, so what is left to ask about is two copies that really do
+ * differ — and there, a question is the only honest answer.
  *
  * `local` is the copy as of when the app opened, not the live session: by the
  * time this resolves the app has served a test and written the round down, so
  * `updatedAt` has already moved for reasons that are not work anybody did.
- * Compared against the live copy, every ordinary morning looks like a device
- * with unpushed changes, and the rare question becomes the daily one.
  *
- * A device with no copy at all takes whatever is there, which is how a second
- * device starts. A device that has never synced but holds work is `diverged`:
- * its first push would be over somebody else's file.
- *
- * Ahead of the bottom row, and for the same reason `GitHubStorage.commit` puts
- * its no-op check ahead of its refusal: **two copies that say the same thing
- * have nothing to choose between them, whatever their lineage.** The lineage
- * test is a stand-in for a content test, and it is the wrong answer in one
- * ordinary case on one device — the push that lands as the app is taken away,
- * and dies before the marker can be written down. The remote has then "moved"
- * (it holds this device's own work) and this device has "unsent" work (its
- * clock moved), so a student who has never owned a second device is asked which
- * of two identical files to keep. With the two copies in hand there is no need
- * to guess: compare them.
+ * `hasUnsent` is still exported and still worth asking — it is what tells the
+ * two halves of `diverged` apart, and so what the sheets word themselves from.
+ * It no longer decides whether anything is thrown away.
  */
 export function triage(
   local: Progress | null,
@@ -145,9 +165,7 @@ export function triage(
   if (local === null) return { kind: "adopt", remote };
   if (!remoteMoved(marker, remote.updatedAt)) return { kind: "current" };
   if (sameProgress(local, remote)) return { kind: "agreed", remote };
-  return hasUnsent(marker, local.updatedAt)
-    ? { kind: "diverged", remote }
-    : { kind: "adopt", remote };
+  return { kind: "diverged", remote, unsent: hasUnsent(marker, local.updatedAt) };
 }
 
 /**

@@ -118,7 +118,11 @@ export class SyncingFileStorage implements StorageAdapter {
 
   async save(progress: Progress): Promise<void> {
     await this.local.save(progress);
-    this.queued = progress;
+    // A copy this class owns: `Session.progress()` hands out its live object,
+    // so a queue holding it holds whatever is studied next rather than what was
+    // queued — and the clock read off it after the push names a copy newer than
+    // the body that was sent. See `detach` in the web app's mirror.
+    this.queued = structuredClone(progress) as Progress;
     clearTimeout(this.timer);
     this.timer = setTimeout(() => void this.flush(), PUSH_DELAY_MS);
   }
@@ -129,7 +133,11 @@ export class SyncingFileStorage implements StorageAdapter {
    */
   async saveNow(progress: Progress, opts: { force?: boolean } = {}): Promise<void> {
     await this.local.save(progress);
-    this.queued = progress;
+    // A copy this class owns: `Session.progress()` hands out its live object,
+    // so a queue holding it holds whatever is studied next rather than what was
+    // queued — and the clock read off it after the push names a copy newer than
+    // the body that was sent. See `detach` in the web app's mirror.
+    this.queued = structuredClone(progress) as Progress;
     clearTimeout(this.timer);
     await this.flush(opts);
   }

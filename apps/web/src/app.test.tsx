@@ -5011,7 +5011,19 @@ describe("a device that is behind another one", () => {
     starred,
   });
 
-  it("takes the newer copy without a word when it has nothing of its own", async () => {
+  it("asks about the newer copy, and says that taking it loses nothing", async () => {
+    // The phone-then-laptop case, which used to be taken in silence because the
+    // marker said this device had nothing of its own. That silence is gone: a
+    // marker is a claim about a past push, and it was wrong exactly when the
+    // mirror had quietly stopped pushing — so what it authorised was reloading
+    // a stale remote over a week of study, with no question asked.
+    //
+    // What survives of the old argument is the wording. Being asked "which of
+    // these two do you want?" every morning is how people learn to answer
+    // without reading, so the sheet has to say which morning this is: the
+    // device holds nothing unsent, and the copy on GitHub costs nothing to
+    // take. The button that would force-push over the phone is still there and
+    // still not the primary one.
     const reload = stubReload();
     const remote = copy("2026-09-09T00:00:00.000Z", ["decl2"]);
     stubGitHub(remote);
@@ -5023,10 +5035,12 @@ describe("a device that is behind another one", () => {
       mount(mine);
     });
 
-    // No sheet. This is the phone-then-laptop case and it is not a question.
-    expect(screen.queryByRole("dialog", { name: /another device/i })).toBeNull();
-    expect(new SyncingStorage().read()?.starred).toEqual(["decl2"]);
-    expect(reload).toHaveBeenCalled();
+    const sheet = screen.getByRole("dialog", { name: "Progress from another device" });
+    expect(sheet.textContent).toContain("nothing it has not sent");
+    expect(sheet.textContent).not.toContain("has been studied since");
+    // Nothing decided, nothing thrown away, and no reload behind their back.
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+    expect(reload).not.toHaveBeenCalled();
   });
 
   it("asks when this device has been studied since it last synced", async () => {

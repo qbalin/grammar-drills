@@ -795,22 +795,41 @@ which is read as both.
 
 Two questions come out of that, and neither compares timestamps for order: has
 the remote moved since we agreed, and does this device hold work it never sent.
-A device holding nothing of its own **takes the other copy silently**: a phone
-on the sofa and a laptop the next morning is ordinary use, and a question there
-is a question people learn to dismiss. Only when both have moved is anybody
-asked, and that is also when **Pull** warns — a pull discards whatever this
-device has not sent, so what it asks about is the loss, not the direction.
+Only the first decides anything. The second decides how the question is *worded*
+— and that distinction is the whole of what follows.
 
-Ahead of both of them is a third, which is not about lineage at all: **do the
-two copies say the same thing?** They can, with the marker insisting otherwise,
-and it happens on one device with no second one in the world. The flush on the
-way out of the app lands its commit and the page is gone before the marker can
-be written down; next launch the remote has "moved" — it holds this device's
-own work — and the device has "unsent" work, because opening it moved the clock.
-Read from lineage that is the question, asked over two identical files. So the
-check compares them, and a match mends the marker and says nothing, for the same
-reason `GitHubStorage` declines to commit one: two copies that say the same thing
-have nothing to lose between them, whatever their lineage.
+**Nothing is ever replaced automatically unless nothing can be lost**, and only
+two cases prove that. A device with no copy at all takes whatever is there,
+which is how a second device starts. And two copies that **say the same thing**
+are the same file with two clocks on it, so there is nothing to choose: the
+marker is mended and nothing is said. That second case is not a nicety. It
+happens on one device with no second one in the world — the flush on the way out
+of the app lands its commit and the page is gone before the marker can be
+written down, so next launch the remote has "moved" (it holds this device's own
+work) and the device has "unsent" work (opening it moved the clock). Read from
+lineage that is a question asked over two identical files. Compared, it is not a
+question at all. It is the same rule `GitHubStorage` declines to commit on.
+
+Everything else asks, including the phone-on-the-sofa-and-laptop-in-the-morning
+case that used to be taken in silence. The silence rested on `hasUnsent` — the
+marker's word that this device had nothing of its own — and a marker is a claim
+about a past push, wrong exactly when the mirror had quietly stopped pushing,
+which is the moment a session is on the line. A destructive answer may not rest
+on a guard that can be quietly false. So the morning costs one question, and the
+case above is what keeps it from being a daily one.
+
+Since two quite different situations now reach that question, it has to say
+which it is, and `unsent` is carried out of the check rather than asked again
+later — only the check knows which copy it compared, and asked of the live
+session the answer is nearly always "yes", because opening the app moves the
+clock. A device that has been studied is choosing which copy to lose. A device
+that has not is being offered a catch-up that costs it nothing, and is told so:
+in the terminal that changes the default answer, which is the half that matters
+when somebody presses Enter. Told alike, the second reads as the first, and the
+obvious answer to the first force-pushes a week-old copy over last night.
+
+**Pull** warns on the same footing — a pull discards whatever this device has
+not sent, so what it asks about is the loss, not the direction.
 
 The check also runs **again when the tab comes back**, not only at launch, held
 to once a minute. An installed app left open for a week never looked at GitHub
@@ -856,6 +875,20 @@ Nor is an unchanged copy committed. Opening the app moves `updatedAt` without
 anything being studied, and that used to be a commit on somebody's real
 repository every time; a save whose content matches what the remote holds, its
 clock aside, sends nothing at all.
+
+That last rule is one object identity away from being a catastrophe, and was.
+`Session.progress()` hands out `this.p` itself — live, mutated in place by every
+grade, because cloning it on the keystroke path is work nobody asked for. Held
+by the mirror as "what the remote holds", it stopped being a record of anything
+and became a second name for what the device was doing: the next commit compared
+that object with itself, called it unchanged whatever had been studied, and sent
+nothing, while reporting a push that landed. One commit per session, silently,
+with the status line saying *synced* — and a marker naming a file GitHub had
+never been given, which the next check read as another device having been at it.
+So both ends now keep copies they own: the mirror queues a detached one, and
+`commit` answers about the copy it serialized rather than about the caller's.
+The rule to hold on to is that **anything kept past the moment it was handed
+over must be a copy**, because what it was handed was not a value.
 
 The answers you write are part of that file (`attempts`, keyed by topic), and
 none of them is dropped: a question you meet once a year is exactly the one

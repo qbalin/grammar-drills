@@ -82,14 +82,21 @@ afterEach(() => vi.unstubAllGlobals());
 const settle = () => new Promise<void>((r) => setTimeout(r, 0));
 
 describe("the startup check", () => {
-  it("takes what the phone pushed, without asking", async () => {
-    // The ordinary morning. Asking about it is how people learn to dismiss the
-    // question that counts.
+  it("asks about what the phone pushed, rather than taking it", async () => {
+    // The ordinary morning, and it used to be taken in silence on the argument
+    // that asking here is how people learn to dismiss the question that counts.
+    // The argument was sound; what stood behind the silence was not. It was the
+    // marker's word that this device had nothing of its own — a claim about a
+    // past push, false exactly when the mirror had quietly stopped pushing, and
+    // false in the direction that reloads a stale remote over a week of work.
     device(at(MON, 3), agreed(MON));
     stubApi(at(TUE, 9));
     expect(await new SyncingStorage().checkRemote()).toEqual({
-      kind: "adopt",
+      kind: "diverged",
       remote: expect.objectContaining({ newTopicsIntroduced: 9 }),
+      // Which the sheet words itself from: this device holds nothing unsent, so
+      // it is being offered a catch-up rather than asked to pick a loser.
+      unsent: false,
     });
   });
 
@@ -99,14 +106,14 @@ describe("the startup check", () => {
     expect((await new SyncingStorage().checkRemote()).kind).toBe("diverged");
   });
 
-  it("adopts a copy stamped earlier than this device's", async () => {
+  it("does not prefer this device merely for being stamped later", async () => {
     // The defect, as the check saw it. This laptop was opened on Tuesday, which
     // stamped it Tuesday without a question being answered; the phone pushed on
     // Monday and holds the week's work. Later stamp, less study — so under the
     // old rule the check found "nothing to do" and the laptop pushed over it.
     device(at(TUE, 3), { pushedAt: TUE, remoteAt: WED });
     stubApi(at(MON, 9));
-    expect((await new SyncingStorage().checkRemote()).kind).toBe("adopt");
+    expect((await new SyncingStorage().checkRemote()).kind).toBe("diverged");
   });
 
   it("has nothing to do when GitHub holds what this device put there", async () => {
@@ -183,6 +190,50 @@ describe("the push", () => {
  * possibly answer from knowledge is a question they learn to click through, and
  * the one that counts is behind the same button.
  */
+describe("a session that goes on being studied", () => {
+  it("pushes every grade, not only the first", async () => {
+    // The whole failure, from the app's side. `session.progress()` hands out
+    // one live object and the app saves it after every grade, so the mirror was
+    // being asked to commit the same identity over and over. It committed the
+    // first and quietly declined the rest as "nothing changed", said "synced"
+    // each time, and filed a marker naming a file GitHub did not have — which
+    // the next check read as another device having been at it.
+    device(at(MON, 3), agreed(MON));
+    const puts = stubApi(at(MON, 3));
+    const store = new SyncingStorage();
+    await store.checkRemote();
+
+    const live = at(MON, 3);
+    for (const topics of [4, 5, 6]) {
+      live.newTopicsIntroduced = topics;
+      live.updatedAt = `2026-01-0${topics}T00:00:00.000Z`;
+      await store.saveNow(live);
+    }
+
+    expect(puts).toHaveLength(3);
+    expect(puts.map((p) => p.newTopicsIntroduced)).toEqual([4, 5, 6]);
+  });
+
+  it("files what it sent, so the next launch is not asked about it", async () => {
+    device(at(MON, 3), agreed(MON));
+    stubApi(at(MON, 3));
+    const store = new SyncingStorage();
+    await store.checkRemote();
+
+    const live = at(MON, 3);
+    live.newTopicsIntroduced = 4;
+    live.updatedAt = TUE;
+    await store.saveNow(live);
+    // A grade after the push, still only on this device.
+    live.updatedAt = WED;
+
+    expect(JSON.parse(localStorage.getItem(SYNCED_KEY) ?? "null")).toEqual({
+      pushedAt: TUE,
+      remoteAt: TUE,
+    });
+  });
+});
+
 describe("a device asked about itself", () => {
   it("mends a marker its own push landed without", async () => {
     // The flush on the way out of the app: the PUT lands and the page is gone
@@ -260,13 +311,17 @@ describe("a device asked about itself", () => {
 });
 
 describe("looking again when the tab comes back", () => {
-  it("takes what the other device pushed, without a word", async () => {
+  it("asks about what the other device pushed", async () => {
+    // Never adopts. Coming back to a tab is the calm moment to *find out*, and
+    // it was very nearly the moment a session was destroyed at: this ran on
+    // every tab-return and reloaded the page on `adopt`, which is the answer a
+    // wrong marker gives. Nothing here replaces anything now.
     device(at(MON, 3), agreed(MON));
     stubApi(at(TUE, 9));
     const store = new SyncingStorage();
     await store.checkRemote();
 
-    expect((await store.recheck(at(MON, 3))).kind).toBe("adopt");
+    expect((await store.recheck(at(MON, 3))).kind).toBe("diverged");
   });
 
   it("holds for a while, so flicking between tabs is not a request each time", async () => {
@@ -290,7 +345,11 @@ describe("the gate", () => {
     // round trip, so on a slow morning the timer fires first and waits on the
     // gate. Released before the app can act on the answer, that continuation
     // ran first and committed the copy the app was on its way to replace.
-    device(at(MON, 3), agreed(MON));
+    //
+    // A device with no copy of its own is what `adopt` means now — the second
+    // device being set up, which is the one case where taking the other copy
+    // cannot cost anything.
+    device(null, agreed(MON));
     const store = new SyncingStorage();
     const puts = stubApi(at(TUE, 9));
 

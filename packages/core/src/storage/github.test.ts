@@ -282,6 +282,60 @@ describe("GitHubStorage", () => {
       expect(sent).toEqual({ remoteAt: NEW });
     });
 
+    it("keeps mirroring a caller that hands it the same object every time", async () => {
+      // The one that stopped the mirror dead and then fed a stale remote back
+      // over the device. `Session.progress()` returns `this.p` itself — live,
+      // mutated in place by every grade — so the app hands the *same object* to
+      // every save. Kept as `known`, the next commit compared that object with
+      // itself, found it unchanged whatever had been studied, and sent nothing:
+      // one push per session, silently, with the status line saying "synced".
+      //
+      // Every other test in this block builds a fresh copy per call, which is
+      // exactly why none of them could see it.
+      const store = new GitHubStorage(cfg);
+      const calls = stubApi({ sha: "abc" });
+      const live = progress(NEW, 3);
+
+      await store.save(live, seen(OLD));
+      // What a grade does: the same object, moved on.
+      live.newTopicsIntroduced = 4;
+      live.updatedAt = "2026-06-02T00:00:00.000Z";
+      await store.save(live, seen(NEW));
+
+      expect(calls.filter((c) => c.method === "PUT")).toHaveLength(2);
+    });
+
+    it("answers about the copy it sent, not the caller's later one", async () => {
+      // The other half, and the half that poisoned the marker. `remoteAt` is
+      // filed as "what the remote holds"; read off the caller's live object
+      // after the round trip, it named a copy that was never sent — and a
+      // marker naming a file GitHub has not got makes the next check believe
+      // another device has been at it, which is how a stale remote came to be
+      // reloaded over a week of study.
+      const store = new GitHubStorage(cfg);
+      const live = progress(NEW, 3);
+      let body: Progress | undefined;
+      vi.stubGlobal(
+        "fetch",
+        vi.fn(async (_url: string, init?: RequestInit) => {
+          if ((init?.method ?? "GET") === "GET") {
+            return Response.json({ sha: "abc", content: b64(JSON.stringify(progress(OLD))) });
+          }
+          const put = JSON.parse(String(init?.body)) as { content: string };
+          body = JSON.parse(Buffer.from(put.content, "base64").toString("utf8")) as Progress;
+          // A grade landing while the PUT is in the air. It is not in the body
+          // above, so it must not be in what this call claims to have sent.
+          live.updatedAt = "2026-06-02T00:00:00.000Z";
+          live.newTopicsIntroduced = 4;
+          return Response.json({ content: { sha: "abc+" } });
+        }),
+      );
+
+      const sent = await store.commit(live, seen(OLD));
+      expect(sent).toEqual({ remoteAt: body?.updatedAt });
+      expect(sent).toEqual({ remoteAt: NEW });
+    });
+
     it("is not fooled by the order the keys happen to be in", async () => {
       // One side is parsed out of the remote file and the other is built in
       // memory, so their key order differs. Compared as text, a file that

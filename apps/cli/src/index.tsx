@@ -68,22 +68,43 @@ let progress = await local.load();
  * lose one of them — merging two spaced-repetition schedules is a different and
  * much larger problem than this is trying to solve.
  *
- * Asked only when both copies have moved since they last agreed. "Newer" is a
- * fine answer to "which of these is the catch-up?" and a poor one to "which of
- * these do you want?", so it decides the first and never the second — a machine
- * that has been offline all week holds the older copy and may still have the
- * real work on it. What is not worth asking about is the ordinary morning where
- * this machine has nothing of its own and the phone has last night.
+ * "Newer" is a fine answer to "which of these is the catch-up?" and a poor one
+ * to "which of these do you want?", so it decides the first and never the second
+ * — a machine that has been offline all week holds the older copy and may still
+ * have the real work on it.
+ *
+ * `unsent` is what the two situations that reach here are told apart by, and it
+ * changes the **default**, which is the part that matters in a terminal. This
+ * used to be asked only when both copies had moved, so `[y/N]` was right: N
+ * keeps this machine, and this machine had work on it. Now that nothing is
+ * replaced automatically, the ordinary morning arrives here too — and there N
+ * force-pushes a week-old copy over last night's phone, on the Enter key, in
+ * answer to a sentence that told the user their machine had been studied when
+ * it had not. So the question a machine with nothing of its own asks defaults
+ * to taking the other copy, which is what it would have done silently before.
  */
-async function resolveConflict(remote: Progress, local: Progress): Promise<boolean> {
+async function resolveConflict(
+  remote: Progress,
+  local: Progress,
+  unsent: boolean,
+): Promise<boolean> {
   const rl = createPrompter();
   try {
     stdout.write(
-      `\nThe copy on GitHub was saved ${remote.updatedAt},\n` +
-        `and this machine has been studied since it last synced\n` +
-        `(${local.updatedAt}). Only one can be kept.\n\n`,
+      unsent
+        ? `\nThe copy on GitHub was saved ${remote.updatedAt},\n` +
+            `and this machine has been studied since it last synced\n` +
+            `(${local.updatedAt}). Only one can be kept.\n\n`
+        : `\nThe copy on GitHub was saved ${remote.updatedAt}, and this machine\n` +
+            `has nothing it has not sent (${local.updatedAt}), so taking it\n` +
+            `loses nothing.\n\n`,
     );
-    const answer = (await rl.ask("Use the copy from GitHub? [y/N] ")).toLowerCase();
+    const answer = (
+      await rl.ask(`Use the copy from GitHub? ${unsent ? "[y/N]" : "[Y/n]"} `)
+    )
+      .trim()
+      .toLowerCase();
+    if (answer === "") return !unsent;
     return answer === "y" || answer === "yes";
   } finally {
     rl.close();
@@ -97,7 +118,7 @@ if (syncing) {
       await syncing.adopt(found.remote);
       progress = found.remote;
     } else if (found.kind === "diverged") {
-      if (await resolveConflict(found.remote, progress!)) {
+      if (await resolveConflict(found.remote, progress!, found.unsent)) {
         await syncing.adopt(found.remote);
         progress = found.remote;
       }

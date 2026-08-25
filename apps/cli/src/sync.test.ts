@@ -220,16 +220,36 @@ describe("SyncingFileStorage", () => {
   });
 
   describe("the startup check", () => {
-    it("takes a newer copy without asking when this machine has none of its own", async () => {
+    it("asks about a newer copy even when the marker says nothing is unsent", async () => {
+      // This was taken silently, on the marker's word that the machine had
+      // nothing of its own. A marker is a claim about a past push, and the one
+      // thing it may not decide is what gets thrown away — it was wrong exactly
+      // when the mirror had stopped pushing, which is when a session was on the
+      // line. So the copies are compared instead, and two that differ are asked
+      // about.
       stubApi(at("2026-02-02T00:00:00Z", 9));
       const local = at("2026-01-01T00:00:00Z", 3);
       // The marker says this machine's copy is exactly what it last pushed.
       const { sync } = await make(agreed(local.updatedAt));
 
       expect(await sync.checkRemote(local)).toEqual({
-        kind: "adopt",
+        kind: "diverged",
         remote: expect.objectContaining({ updatedAt: "2026-02-02T00:00:00Z" }),
+        // What the prompt words itself from, and defaults from: with nothing of
+        // this machine's waiting to go up, Enter takes the other copy instead
+        // of force-pushing over it.
+        unsent: false,
       });
+    });
+
+    it("takes it silently when the two copies say the same thing", async () => {
+      // Which is what keeps the question above rare. The push landed and the
+      // marker did not — the flush on the way out — so the lineage says both
+      // have moved while the files are identical.
+      stubApi(at("2026-02-02T00:00:00Z", 3));
+      const { sync } = await make(agreed("2026-01-01T00:00:00Z"));
+
+      expect((await sync.checkRemote(at("2026-02-03T00:00:00Z", 3))).kind).toBe("current");
     });
 
     it("asks when both copies have moved since they last agreed", async () => {
@@ -255,17 +275,19 @@ describe("SyncingFileStorage", () => {
       );
     });
 
-    it("adopts a copy stamped earlier than this machine's", async () => {
+    it("does not prefer this machine merely for being stamped later", async () => {
       // The case the clock could not see, and the one that lost people's
       // evenings. Opening the tutor moves `updatedAt` without anything being
       // studied, so this machine's stamp is the later of the two while GitHub
-      // holds the week's real work. Later stamp, less study.
+      // holds the week's real work. Later stamp, less study — so what this
+      // machine must not do is get on with pushing over it.
       stubApi(at("2026-01-01T00:00:00Z", 9));
       const { sync } = await make(agreed("2026-02-02T00:00:00Z"));
       const found = await sync.checkRemote(at("2026-02-02T00:00:00Z", 3));
       expect(found).toEqual({
-        kind: "adopt",
+        kind: "diverged",
         remote: expect.objectContaining({ newTopicsIntroduced: 9 }),
+        unsent: false,
       });
     });
 

@@ -204,7 +204,7 @@ type Overlay =
     }
   | { t: "settings" }
   /** Both copies moved since they last agreed; only a person can choose. */
-  | { t: "conflict"; remote: Progress }
+  | { t: "conflict"; remote: Progress; unsent: boolean }
   /** A deliberate push that would land on top of a newer copy. */
   | { t: "overwrite"; remote: Progress }
   /** A deliberate pull that would discard what this device has not sent. */
@@ -1026,7 +1026,8 @@ export function App({ content, session, storage }: Props) {
     if (!storage.currentConfig()) return;
     void storage.checkRemote().then((found) => {
       if (found.kind === "adopt") adoptRemote(found.remote);
-      else if (found.kind === "diverged") setOverlay({ t: "conflict", remote: found.remote });
+      else if (found.kind === "diverged")
+        setOverlay({ t: "conflict", remote: found.remote, unsent: found.unsent });
     });
   }, [session, storage]);
 
@@ -1047,7 +1048,11 @@ export function App({ content, session, storage }: Props) {
   useEffect(
     () =>
       storage.onBehind((remote) =>
-        setOverlay((showing) => (asksAboutSync(showing) ? showing : { t: "conflict", remote })),
+        // `unsent` without asking: a refusal happens on a push, so there is by
+        // definition something of this device's waiting to go up.
+        setOverlay((showing) =>
+          asksAboutSync(showing) ? showing : { t: "conflict", remote, unsent: true },
+        ),
       ),
     [storage],
   );
@@ -1075,7 +1080,9 @@ export function App({ content, session, storage }: Props) {
         if (found.kind === "adopt") adoptRemote(found.remote);
         else if (found.kind === "diverged") {
           setOverlay((showing) =>
-            asksAboutSync(showing) ? showing : { t: "conflict", remote: found.remote },
+            asksAboutSync(showing)
+              ? showing
+              : { t: "conflict", remote: found.remote, unsent: found.unsent },
           );
         }
       });
@@ -2371,7 +2378,7 @@ export function App({ content, session, storage }: Props) {
           // different one, so what is left is exactly the honest distinction.
           setOverlay(
             storage.hasLineage()
-              ? { t: "conflict", remote: found.remote }
+              ? { t: "conflict", remote: found.remote, unsent: found.unsent }
               : { t: "overwrite", remote: found.remote },
           );
           return;
@@ -3382,10 +3389,19 @@ export function App({ content, session, storage }: Props) {
               setOverlay(null);
             }}
           >
+            {/*
+             * Two different situations reach this sheet and they must not read
+             * alike. It used to mean one thing — both copies studied since they
+             * agreed — because that was the only case that got here. Now that a
+             * destructive answer is never taken automatically, the ordinary
+             * morning arrives here too, and telling somebody their device "has
+             * been studied since it last synced" when it has not is how a laptop
+             * opened after a week gets force-pushed over a phone's evening.
+             */}
             <p className="field__hint" style={{ marginTop: 0 }}>
-              The copy on GitHub was saved {ago(overlay.remote.updatedAt)}, and
-              this device has been studied since it last synced. Only one can be
-              kept.
+              {overlay.unsent
+                ? `The copy on GitHub was saved ${ago(overlay.remote.updatedAt)}, and this device has been studied since it last synced. Only one can be kept.`
+                : `The copy on GitHub was saved ${ago(overlay.remote.updatedAt)}, and this device has nothing it has not sent — so taking it loses nothing.`}
             </p>
             <div className="actions">
               <button

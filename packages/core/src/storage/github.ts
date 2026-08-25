@@ -127,6 +127,15 @@ export class GitHubStorage implements StorageAdapter {
    * The last copy this instance knows the remote to have held — read from it,
    * or written to it. `null` once the file is known not to exist; `undefined`
    * while the remote has never been seen, which is not the same thing.
+   *
+   * **Always detached**, and that is not a detail. `Session.progress()` hands
+   * out `this.p` itself — live, and mutated in place by every grade — so a
+   * `known` set to a caller's object stops being a record of what the remote
+   * holds and becomes another name for what the device is doing. The no-op
+   * check below then compares that object with itself, is true whatever has
+   * been studied since, and this class silently stops mirroring while telling
+   * its caller the push landed. `readRemote` satisfies the invariant through
+   * `JSON.parse`; `commit` has to do it on purpose.
    */
   private known: Progress | null | undefined;
 
@@ -217,11 +226,20 @@ export class GitHubStorage implements StorageAdapter {
       throw new RemoteMovedError(this.known ?? null, this.sha);
     }
 
-    let res = await this.put(progress);
+    // Everything from here answers about `sent`, never about `progress`.
+    //
+    // The caller's object is the session's live one and goes on being mutated
+    // while this waits on github.com — so a grade given during the round trip
+    // is not in the body that was serialized, but would be in any stamp read
+    // off `progress` afterwards. Kept as `known` it is worse still: see the
+    // field. A copy taken here is the one thing that makes both answers true.
+    const sent = structuredClone(progress) as Progress;
+
+    let res = await this.put(sent);
     if (res.status === 409 || res.status === 422) {
       await this.readRemote();
       if (!opts.force) throw new RemoteMovedError(this.known ?? null, this.sha);
-      res = await this.put(progress);
+      res = await this.put(sent);
     }
     if (!res.ok) {
       throw new Error(`GitHub save failed: ${res.status} ${await res.text()}`);
@@ -230,8 +248,8 @@ export class GitHubStorage implements StorageAdapter {
     this.sha = body.content.sha;
     // What we just wrote is what the remote holds, so the next save compares
     // against it without reading the file again.
-    this.known = progress;
-    return { remoteAt: progress.updatedAt };
+    this.known = sent;
+    return { remoteAt: sent.updatedAt };
   }
 
   /**

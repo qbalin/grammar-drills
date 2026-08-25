@@ -69,19 +69,37 @@ describe("the startup triage", () => {
     expect(triage(progress(TUE), progress(MON), agreed)).toEqual({ kind: "current" });
   });
 
-  it("takes a copy this device has not seen, when it has nothing of its own", () => {
-    // The ordinary morning: studied on the phone, opened on the laptop. Asking
-    // about it teaches people to dismiss the question that counts.
+  it("asks about a copy this device has not seen, even holding nothing unsent", () => {
+    // The ordinary morning — studied on the phone, opened on the laptop — and
+    // it used to be taken silently, on the argument that a question there is a
+    // question people learn to dismiss. That argument is sound and the silence
+    // was not, because what stood behind it was `hasUnsent`: a claim about a
+    // past push, wrong in the direction that destroys a session whenever the
+    // marker is wrong. A destructive answer may not rest on a guard that can be
+    // quietly false, so the ordinary morning costs one question.
     expect(triage(progress(MON), progress(TUE), agreed)).toEqual({
-      kind: "adopt",
+      kind: "diverged",
       remote: progress(TUE),
+      // And it says which morning this is, so the question can be worded from
+      // it: nothing of this device's is waiting to go up, so taking the other
+      // copy costs nothing. Told the same as the case below, this one reads as
+      // "choose which to lose" and the obvious answer force-pushes.
+      unsent: false,
     });
+  });
+
+  it("still takes it silently when the two say the same thing", () => {
+    // Which is what keeps the question rare: the morning that really has
+    // nothing in it settles itself, and what is left to ask about is two copies
+    // that genuinely differ.
+    expect(triage(progress(WED, TUE), progress(TUE), agreed).kind).toBe("agreed");
   });
 
   it("asks when both have moved since they last agreed", () => {
     expect(triage(progress(TUE), progress(WED), agreed)).toEqual({
       kind: "diverged",
       remote: progress(WED),
+      unsent: true,
     });
   });
 
@@ -101,6 +119,7 @@ describe("the startup triage", () => {
     expect(triage(progress(TUE), progress(MON), null)).toEqual({
       kind: "diverged",
       remote: progress(MON),
+      unsent: true,
     });
   });
 
@@ -133,14 +152,16 @@ describe("the startup triage", () => {
   });
 
   describe("never by which clock is later", () => {
-    it("adopts a copy stamped earlier than this device's", () => {
+    it("does not prefer this device merely for being stamped later", () => {
       // The case the old rule could not see. The laptop was opened on Tuesday,
       // which stamped it Tuesday without a question being answered; the phone
       // pushed on Monday and holds the week's real work. Later stamp, less
-      // study — so the stamps are not what decides it.
+      // study — so the stamps are not what decides it, and what the laptop must
+      // not do is get on with pushing over Monday as though it were current.
       expect(triage(progress(TUE), progress(MON), { pushedAt: TUE, remoteAt: WED })).toEqual({
-        kind: "adopt",
+        kind: "diverged",
         remote: progress(MON),
+        unsent: false,
       });
     });
 

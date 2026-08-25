@@ -68,6 +68,25 @@ export function saveSyncConfig(cfg: SyncConfig | null): void {
   }
 }
 
+/**
+ * A copy of the progress that this class owns.
+ *
+ * `Session.progress()` hands out its live object — mutated in place by every
+ * grade — so a queue holding it holds whatever the student does next rather
+ * than what was queued. Two things went wrong with that. `markSynced` read a
+ * clock off it *after* the push, naming a copy newer than the body that was
+ * actually serialized; and "did anything newer arrive while we were pushing"
+ * compared the queue against itself, so it was always no, and the grade given
+ * during a push was dropped from the queue instead of being sent after it.
+ *
+ * One clone per grade. Not on the keystroke path — that is `saveLocal`, which
+ * does not queue — and the local write on this same path already stringifies
+ * the whole file.
+ */
+function detach(progress: Progress): Progress {
+  return structuredClone(progress) as Progress;
+}
+
 function storedMarker(): SyncedAt | null {
   try {
     return readSyncedAt(localStorage.getItem(SYNCED_KEY));
@@ -281,7 +300,7 @@ export class SyncingStorage implements StorageAdapter {
     } catch {
       found = { kind: "current" };
     }
-    return this.settle(found);
+    return this.settle(local, found);
   }
 
   /**
@@ -326,10 +345,16 @@ export class SyncingStorage implements StorageAdapter {
    * Both, or neither: nothing else opens the gate on a path that shows no
    * sheet, so `resolveCheck` is never called and every push of the session
    * would wait behind it in silence.
+   *
+   * `local` is passed in rather than read here, and that is the whole point of
+   * the parameter. A check is a network round trip, and the app serves a test
+   * and writes the round down while it is out — so the copy on disk when the
+   * answer lands is not the copy the answer is about. Marked from disk, this
+   * filed a `pushedAt` naming a copy that was never pushed, which is a marker
+   * lying in the direction that gets a session thrown away.
    */
-  private settle(found: StartupCheck): StartupCheck {
+  private settle(local: Progress | null, found: StartupCheck): StartupCheck {
     if (found.kind === "agreed") {
-      const local = this.local.read();
       if (local) this.markSynced(local.updatedAt, found.remote.updatedAt);
       this.releaseGate();
       return { kind: "current" };
@@ -435,7 +460,7 @@ export class SyncingStorage implements StorageAdapter {
     if (this.sealed) return;
     this.writeLocal(progress);
     if (!this.remote) return;
-    this.queued = progress;
+    this.queued = detach(progress);
     clearTimeout(this.timer);
     this.timer = setTimeout(() => void this.flush(), PUSH_DELAY_MS);
   }
@@ -464,7 +489,7 @@ export class SyncingStorage implements StorageAdapter {
   async saveNow(progress: Progress, opts: { force?: boolean } = {}): Promise<void> {
     if (this.sealed) return;
     this.writeLocal(progress);
-    this.queued = progress;
+    this.queued = detach(progress);
     clearTimeout(this.timer);
     // A person has said which copy wins, so the startup question is answered
     // and the gate has nothing left to hold back. Without this the forced push
