@@ -14,7 +14,7 @@
  */
 
 import type { Progress } from "../types.js";
-import { RemoteMovedError } from "./github.js";
+import { RemoteMovedError, sameProgress } from "./github.js";
 
 /** How long to sit on a change before committing it. */
 export const PUSH_DELAY_MS = 4000;
@@ -87,13 +87,19 @@ export function hasUnsent(marker: SyncedAt | null, localUpdatedAt: string): bool
  * What the startup check found, once it has resolved everything it can resolve
  * on its own.
  *
- * The three answers are genuinely different errands and only one of them is a
+ * The four answers are genuinely different errands and only one of them is a
  * question for a person. "Your phone is ahead of your laptop" is ordinary and
  * gets on with it; two devices that have both been studied since they last
  * agreed is a choice nobody else can make.
+ *
+ * `agreed` is `current` with a job attached: the two copies say the same thing
+ * but the marker does not know it, so the caller has to write the marker down
+ * before it can go on being `current`. It carries the remote for that, and for
+ * nothing else — there is nothing to adopt when the copies already match.
  */
 export type StartupCheck =
   | { kind: "current" }
+  | { kind: "agreed"; remote: Progress }
   | { kind: "adopt"; remote: Progress }
   | { kind: "diverged"; remote: Progress };
 
@@ -118,16 +124,28 @@ export type StartupCheck =
  * A device with no copy at all takes whatever is there, which is how a second
  * device starts. A device that has never synced but holds work is `diverged`:
  * its first push would be over somebody else's file.
+ *
+ * Ahead of the bottom row, and for the same reason `GitHubStorage.commit` puts
+ * its no-op check ahead of its refusal: **two copies that say the same thing
+ * have nothing to choose between them, whatever their lineage.** The lineage
+ * test is a stand-in for a content test, and it is the wrong answer in one
+ * ordinary case on one device — the push that lands as the app is taken away,
+ * and dies before the marker can be written down. The remote has then "moved"
+ * (it holds this device's own work) and this device has "unsent" work (its
+ * clock moved), so a student who has never owned a second device is asked which
+ * of two identical files to keep. With the two copies in hand there is no need
+ * to guess: compare them.
  */
 export function triage(
-  localAt: string | null,
+  local: Progress | null,
   remote: Progress | null,
   marker: SyncedAt | null,
 ): StartupCheck {
   if (!remote) return { kind: "current" };
-  if (localAt === null) return { kind: "adopt", remote };
+  if (local === null) return { kind: "adopt", remote };
   if (!remoteMoved(marker, remote.updatedAt)) return { kind: "current" };
-  return hasUnsent(marker, localAt)
+  if (sameProgress(local, remote)) return { kind: "agreed", remote };
+  return hasUnsent(marker, local.updatedAt)
     ? { kind: "diverged", remote }
     : { kind: "adopt", remote };
 }

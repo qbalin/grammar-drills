@@ -78,6 +78,7 @@ export type { StorageAdapter } from "./storage/index.js";
 export {
   GitHubStorage,
   RemoteMovedError,
+  sameProgress,
   type Committed,
   type CommitOptions,
   type GitHubConfig,

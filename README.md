@@ -801,6 +801,25 @@ is a question people learn to dismiss. Only when both have moved is anybody
 asked, and that is also when **Pull** warns — a pull discards whatever this
 device has not sent, so what it asks about is the loss, not the direction.
 
+Ahead of both of them is a third, which is not about lineage at all: **do the
+two copies say the same thing?** They can, with the marker insisting otherwise,
+and it happens on one device with no second one in the world. The flush on the
+way out of the app lands its commit and the page is gone before the marker can
+be written down; next launch the remote has "moved" — it holds this device's
+own work — and the device has "unsent" work, because opening it moved the clock.
+Read from lineage that is the question, asked over two identical files. So the
+check compares them, and a match mends the marker and says nothing, for the same
+reason `GitHubStorage` declines to commit one: two copies that say the same thing
+have nothing to lose between them, whatever their lineage.
+
+The check also runs **again when the tab comes back**, not only at launch, held
+to once a minute. An installed app left open for a week never looked at GitHub
+after the morning it was opened, so the first anybody heard of the other device
+was a push refused in the middle of a question. Coming back to the tab is the
+calm moment to find out, and — because of the paragraph above — nearly always a
+silent one: a device that studied nothing while it was away holds what the
+remote holds, and settles itself.
+
 The same rule is what `GitHubStorage` refuses on. A save is turned away unless
 the remote holds the copy this device last agreed with, whether GitHub reports a
 sha mismatch or (the case that actually lost the data) accepts a freshly-read
@@ -822,6 +841,16 @@ one moment there was something to ask about was the one moment nothing asked.
 Connecting to a repo that already holds a file always asks. This device has
 never agreed with it about anything, so there is no honest way to work out whose
 copy is whose — and naming a repo happens once per device, not once per morning.
+
+**Connect** and **Update** are the same button relabelled, though, and that
+argument is only true of the first of them. A device that has synced always
+finds a file up there, so Update asked every time — under a sheet reading "this
+device has never synced with that repo", which was false in the case it was
+shown in. It is the button you press to paste a reissued token. So what a repo
+is *named* by is owner, repo, branch and path, and the token is not part of it:
+a changed name ends the agreement and asks, while a changed token keeps it, and
+Update on a repo this device is in step with goes through the ordinary check and
+says nothing at all.
 
 Nor is an unchanged copy committed. Opening the app moves `updatedAt` without
 anything being studied, and that used to be a commit on somebody's real

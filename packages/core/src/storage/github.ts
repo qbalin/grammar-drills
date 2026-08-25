@@ -68,6 +68,37 @@ export interface Committed {
 }
 
 /**
+ * Two progress files compared as a person would: the same, or not the same.
+ *
+ * Keys are sorted because the two sides are serialized from different places —
+ * one parsed out of the remote file, one built in memory — and an object's key
+ * order follows how it was made. Unsorted, a file that changed in no way would
+ * read as changed the first time it came back from GitHub.
+ *
+ * `updatedAt` is left out: it moves on every save whether or not anything was
+ * studied, so a comparison including it can only ever say "different".
+ *
+ * Exported because the startup check wants the same question answered, and for
+ * the same reason this one does: two copies that say the same thing have
+ * nothing to choose between them. `sync.ts` already imports from here, so it
+ * travels along an edge that existed — the other direction would be a cycle.
+ */
+export function sameProgress(a: Progress, b: Progress): boolean {
+  return stable({ ...a, updatedAt: "" }) === stable({ ...b, updatedAt: "" });
+}
+
+function stable(value: unknown): string {
+  if (value === null || typeof value !== "object") return JSON.stringify(value) ?? "null";
+  if (Array.isArray(value)) return `[${value.map(stable).join(",")}]`;
+  const obj = value as Record<string, unknown>;
+  const body = Object.keys(obj)
+    .sort()
+    .map((k) => `${JSON.stringify(k)}:${stable(obj[k])}`)
+    .join(",");
+  return `{${body}}`;
+}
+
+/**
  * Thrown instead of overwriting a remote that has moved on.
  *
  * It carries what the remote holds, because the check that found it had to read
@@ -82,32 +113,6 @@ export class RemoteMovedError extends Error {
     super("The copy on GitHub is newer than this device's.");
     this.name = "RemoteMovedError";
   }
-}
-
-/**
- * Two progress files compared as a person would: the same, or not the same.
- *
- * Keys are sorted because the two sides are serialized from different places —
- * one parsed out of the remote file, one built in memory — and an object's key
- * order follows how it was made. Unsorted, a file that changed in no way would
- * read as changed the first time it came back from GitHub.
- *
- * `updatedAt` is left out: it moves on every save whether or not anything was
- * studied, so a comparison including it can only ever say "different".
- */
-function sameProgress(a: Progress, b: Progress): boolean {
-  return stable({ ...a, updatedAt: "" }) === stable({ ...b, updatedAt: "" });
-}
-
-function stable(value: unknown): string {
-  if (value === null || typeof value !== "object") return JSON.stringify(value) ?? "null";
-  if (Array.isArray(value)) return `[${value.map(stable).join(",")}]`;
-  const obj = value as Record<string, unknown>;
-  const body = Object.keys(obj)
-    .sort()
-    .map((k) => `${JSON.stringify(k)}:${stable(obj[k])}`)
-    .join(",");
-  return `{${body}}`;
 }
 
 /**

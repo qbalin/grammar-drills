@@ -84,7 +84,16 @@ export class SyncingFileStorage implements StorageAdapter {
    * have moved since they last agreed.
    */
   async checkRemote(local: Progress | null): Promise<StartupCheck> {
-    return triage(local?.updatedAt ?? null, await this.fetchRemote(), this.marker);
+    const found = triage(local ?? null, await this.fetchRemote(), this.marker);
+    // The two copies say the same thing and the marker did not know it — a
+    // push that landed on the way out without getting its marker written. There
+    // is nothing to choose, so file the agreement and carry on rather than
+    // asking a person about two identical files.
+    if (found.kind === "agreed") {
+      if (local) await this.markSynced(local.updatedAt, found.remote.updatedAt);
+      return { kind: "current" };
+    }
+    return found;
   }
 
   describe(): string {

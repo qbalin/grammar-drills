@@ -5178,6 +5178,36 @@ describe("a device that is behind another one", () => {
     expect(reload).toHaveBeenCalled();
   });
 
+  it("says nothing when Update is pressed on a repo this device agrees with", async () => {
+    // The reported bug, and the one people actually met. "Update" and "Connect"
+    // are the same button relabelled, and Connect asks about anything already
+    // up there — rightly, since a device that has never synced cannot know
+    // whose copy is whose. But a device that has synced always finds a file up
+    // there, so Update asked every time, under a sheet whose wording ("this
+    // device has never synced with that repo") was false in the case it was
+    // shown in. Pressing it to paste a reissued token is the whole reason it
+    // exists.
+    stubReload();
+    const mine = onDevice(copy("2026-01-01T00:00:00.000Z", ["decl1"]));
+    stubGitHub(mine);
+    const user = userEvent.setup();
+    configured();
+    synced(mine.updatedAt);
+    await act(async () => {
+      mount(mine);
+    });
+
+    await user.click(screen.getByRole("button", { name: "Settings" }));
+    await user.type(screen.getByLabelText(/Access token/), "2");
+    await act(async () => {
+      await user.click(screen.getByRole("button", { name: "Update" }));
+    });
+
+    expect(screen.queryByRole("dialog", { name: /already has progress/i })).toBeNull();
+    expect(screen.queryByRole("dialog", { name: /another device/i })).toBeNull();
+    expect(new SyncingStorage().read()?.starred).toEqual(["decl1"]);
+  });
+
   it("asks before connecting to a repo that already holds something newer", async () => {
     stubReload();
     const calls = stubGitHub(copy("2026-09-09T00:00:00.000Z", ["decl2"]));

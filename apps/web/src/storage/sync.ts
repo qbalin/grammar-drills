@@ -30,6 +30,9 @@ const CONFIG_KEY = profile.storage.webSyncKey;
  */
 const SYNCED_KEY = `${CONFIG_KEY}:synced`;
 
+/** How long a check holds for, before coming back to the tab looks again. */
+const RECHECK_INTERVAL_MS = 60_000;
+
 export interface SyncConfig {
   token: string;
   owner: string;
@@ -106,6 +109,8 @@ export class SyncingStorage implements StorageAdapter {
   private timer: ReturnType<typeof setTimeout> | undefined;
   private queued: Progress | null = null;
   private inFlight = false;
+  private checking = false;
+  private checkedAt = 0;
   private sealed = false;
   private state: SyncState = { kind: "off" };
   private readonly listeners = new Set<(s: SyncState) => void>();
@@ -125,7 +130,15 @@ export class SyncingStorage implements StorageAdapter {
    */
   private readonly behindListeners = new Set<(remote: Progress) => void>();
 
-  /** What this device last pushed or took. See `SYNCED_KEY`. */
+  /**
+   * What this device last pushed or took. See `SYNCED_KEY`.
+   *
+   * A cache of what is in `localStorage`, never the truth: an installed PWA and
+   * a browser tab on the same origin share that storage, and the window that
+   * did not push holds a marker the other one moved on. Read once and kept, its
+   * next push is refused and it asks which copy to keep — on one device, about
+   * itself. So everything that compares it goes through `currentMarker`.
+   */
   private marker: SyncedAt | null = storedMarker();
 
   /**
@@ -138,7 +151,7 @@ export class SyncingStorage implements StorageAdapter {
    * morning looks like a device with unpushed changes, and the question that
    * should be rare would be the one asked every time.
    */
-  private readonly bootAt: string | null = this.local.read()?.updatedAt ?? null;
+  private readonly boot: Progress | null = this.local.read();
 
   /**
    * Resolves when the startup check has been made, or immediately when there is
@@ -174,9 +187,20 @@ export class SyncingStorage implements StorageAdapter {
     this.openGate = null;
   }
 
+  /**
+   * The marker as it stands, not as it stood when this instance was made.
+   *
+   * See the field. The read is a `localStorage.getItem` and a `JSON.parse` of
+   * two short strings, on paths that are about to talk to github.com.
+   */
+  private currentMarker(): SyncedAt | null {
+    this.marker = storedMarker();
+    return this.marker;
+  }
+
   /** True while this device holds a grade GitHub has not been told about. */
   hasUnpushed(local: Progress): boolean {
-    return hasUnsent(this.marker, local.updatedAt);
+    return hasUnsent(this.currentMarker(), local.updatedAt);
   }
 
   /**
@@ -194,6 +218,23 @@ export class SyncingStorage implements StorageAdapter {
       localStorage.setItem(SYNCED_KEY, JSON.stringify(this.marker));
     } catch {
       /* storage blocked; the marker is an optimisation, not a correctness bet */
+    }
+  }
+
+  /**
+   * Drop the agreement, because it was about a different file.
+   *
+   * `SYNCED_KEY` is keyed by the pack rather than by the repo, so a marker
+   * naming the old file would otherwise survive a change of repo and be
+   * compared against the new one's clock — which is the failure this whole
+   * scheme exists to avoid, arriving from the other side.
+   */
+  private forgetMarker(): void {
+    this.marker = null;
+    try {
+      localStorage.removeItem(SYNCED_KEY);
+    } catch {
+      /* storage blocked; nothing was stored to remove */
     }
   }
 
@@ -219,12 +260,79 @@ export class SyncingStorage implements StorageAdapter {
    * or by `resolveCheck` when the question is dismissed.
    */
   async checkRemote(): Promise<StartupCheck> {
+    // Against `boot`, not the session: see the field.
+    return this.checkAgainst(this.boot);
+  }
+
+  /**
+   * The same check, about a copy the caller names.
+   *
+   * Startup is the one caller that must not name the live one — by the time it
+   * answers, the app has served a test and moved the clock. Every other caller
+   * must: connecting a repo happens an hour into a session, and asked about the
+   * copy the tab opened with, a device that has studied all morning looks like
+   * a device with nothing to lose, and is silently replaced by the file it was
+   * being connected in order to reach.
+   */
+  async checkAgainst(local: Progress | null): Promise<StartupCheck> {
     let found: StartupCheck;
     try {
-      // Against `bootAt`, not the session: see the field.
-      found = triage(this.bootAt, await this.fetchRemote(), this.marker);
+      found = triage(local, await this.fetchRemote(), this.currentMarker());
     } catch {
       found = { kind: "current" };
+    }
+    return this.settle(found);
+  }
+
+  /**
+   * Look again, on a tab that has been away.
+   *
+   * The startup check runs once and a session runs for a day: an installed app
+   * left open all week never looks at GitHub again, so the first time another
+   * device's work is noticed is a push refused mid-question — the same question
+   * asked at the worst possible moment. Coming back to the tab is the calm one.
+   *
+   * Against the live copy rather than `boot`, which by now is a day old and
+   * whose unsent work has long since gone up. That is safe here and would not
+   * have been at startup, because the comparison is content: a device that
+   * studied nothing while it was away holds what the remote holds, and settles
+   * itself without a word.
+   */
+  async recheck(local: Progress): Promise<StartupCheck> {
+    if (!this.remote || this.sealed || this.inFlight || this.checking) {
+      return { kind: "current" };
+    }
+    // Switching tabs is not a rare event, and a request to github.com per
+    // switch would be. What this is for is the app that has been away, and a
+    // minute is short against that and long against flicking between tabs.
+    const now = Date.now();
+    if (now - this.checkedAt < RECHECK_INTERVAL_MS) return { kind: "current" };
+    this.checkedAt = now;
+    this.checking = true;
+    try {
+      return await this.checkAgainst(local);
+    } finally {
+      this.checking = false;
+    }
+  }
+
+  /**
+   * File what a check answered, and hand back what is left for the app.
+   *
+   * `agreed` is settled here rather than passed on: the two copies say the same
+   * thing, so there is nothing for a person to choose and nothing for the app
+   * to show. What there is to do is write the marker down — this is the lineage
+   * repairing itself after a push that landed without one — and open the gate.
+   * Both, or neither: nothing else opens the gate on a path that shows no
+   * sheet, so `resolveCheck` is never called and every push of the session
+   * would wait behind it in silence.
+   */
+  private settle(found: StartupCheck): StartupCheck {
+    if (found.kind === "agreed") {
+      const local = this.local.read();
+      if (local) this.markSynced(local.updatedAt, found.remote.updatedAt);
+      this.releaseGate();
+      return { kind: "current" };
     }
     if (found.kind === "current") this.releaseGate();
     return found;
@@ -241,9 +349,40 @@ export class SyncingStorage implements StorageAdapter {
     this.releaseGate();
   }
 
-  /** Point sync at a repo, or turn it off with `null`. */
+  /** Which file on GitHub a config names. The token is not part of it. */
+  private static target(cfg: SyncConfig | null): string | null {
+    return cfg ? `${cfg.owner}/${cfg.repo}/${cfg.branch}/${cfg.path}` : null;
+  }
+
+  /**
+   * Whether this device has ever agreed with the file sync currently names.
+   *
+   * What "That repo already has progress" is allowed to be shown on: it tells
+   * a person the app cannot work out whose copy is whose, which is true of a
+   * repo this device has never synced with and false of the one it synced with
+   * four seconds ago.
+   */
+  hasLineage(): boolean {
+    return this.currentMarker() !== null;
+  }
+
+  /**
+   * Point sync at a repo, or turn it off with `null`.
+   *
+   * A marker describes an agreement with one file, so pointing at another one
+   * ends it. Not at another *token*, though: pasting a reissued token is the
+   * ordinary reason to press Update, and treating it as a new repo would throw
+   * away lineage that is perfectly intact and ask a question with no content.
+   */
   configure(config: SyncConfig | null): void {
+    // Against what is *stored*, not against `this.config`, which is null until
+    // the constructor's own `configure(loadSyncConfig())` has run — read from
+    // memory, opening the app would look like naming a new repo every time and
+    // throw away the marker of the one it is actually pointed at.
+    const named = SyncingStorage.target(config);
+    const moved = named !== null && named !== SyncingStorage.target(loadSyncConfig());
     this.config = config;
+    if (moved) this.forgetMarker();
     // The commit subject names the language rather than being stored with the
     // credentials: it is a fact about this build, not about the user's repo.
     this.remote = config
@@ -348,7 +487,9 @@ export class SyncingStorage implements StorageAdapter {
     this.writeLocal(progress);
     // Both sides of the marker, and the same value on each: this copy is the
     // device's now, and it is what the remote holds.
-    if (opts.synced) this.markSynced(progress.updatedAt, progress.updatedAt);
+    if (opts.synced) {
+      this.markSynced(progress.updatedAt, progress.updatedAt);
+    }
   }
 
   clearLocal(): void {
@@ -401,7 +542,10 @@ export class SyncingStorage implements StorageAdapter {
       // that, and passes it anyway so the two paths differ in one word.
       const { remoteAt } = await this.remote.commit(progress, {
         ...opts,
-        lastSeen: this.marker?.remoteAt,
+        // Re-read, not remembered: the other window of this app may have pushed
+        // since this one was made, and comparing a stale marker would refuse a
+        // push over work that is already up there — see the field.
+        lastSeen: this.currentMarker()?.remoteAt,
       });
       landed = true;
       // Only clear the queue if nothing newer arrived while we were pushing.

@@ -175,6 +175,115 @@ describe("the push", () => {
   });
 });
 
+/**
+ * The questions that were asked about nothing.
+ *
+ * Every one of these came up on a single device that had never met a second
+ * one, which is what made them worth chasing: a question a student cannot
+ * possibly answer from knowledge is a question they learn to click through, and
+ * the one that counts is behind the same button.
+ */
+describe("a device asked about itself", () => {
+  it("mends a marker its own push landed without", async () => {
+    // The flush on the way out of the app: the PUT lands and the page is gone
+    // before the marker reaches `localStorage`. Next launch, the remote has
+    // "moved" — it holds this device's own work — and the device has "unsent"
+    // work, because opening the app moves the clock. Read from lineage alone
+    // that is `diverged`, and the sheet comes up over two identical files.
+    device(at(WED, 3), agreed(MON));
+    stubApi(at(TUE, 3));
+    const store = new SyncingStorage();
+
+    expect((await store.checkRemote()).kind).toBe("current");
+    expect(JSON.parse(localStorage.getItem(SYNCED_KEY) ?? "null")).toEqual({
+      pushedAt: WED,
+      remoteAt: TUE,
+    });
+  });
+
+  it("lets the session's pushes out after mending it", async () => {
+    // The mended case shows no sheet, so nothing calls `resolveCheck`, so
+    // nothing else would ever open the gate: every push of the session would
+    // wait behind it in silence, which is worse than the question.
+    device(at(WED, 3), agreed(MON));
+    const store = new SyncingStorage();
+    const puts = stubApi(at(TUE, 3));
+
+    await store.save(at(WED, 4));
+    void store.flush();
+    await store.checkRemote();
+    await settle();
+
+    expect(puts).toHaveLength(1);
+  });
+
+  it("still asks when the two copies really do differ", async () => {
+    device(at(WED, 5), agreed(MON));
+    stubApi(at(TUE, 9));
+    expect((await new SyncingStorage().checkRemote()).kind).toBe("diverged");
+  });
+
+  it("keeps its lineage when only the token changes", async () => {
+    // The reason people press Update. Treated as naming a new repo, it throws
+    // away an agreement that is perfectly intact and asks a question with no
+    // content — which is the complaint this whole file is about.
+    device(at(MON, 3), agreed(MON));
+    stubApi(at(MON, 3));
+    const store = new SyncingStorage();
+    store.configure({ token: "t2", owner: "me", repo: "r", path: "p.json", branch: "main" });
+
+    expect(store.hasLineage()).toBe(true);
+    expect((await store.checkAgainst(at(MON, 3))).kind).toBe("current");
+  });
+
+  it("ends it when the file named is a different one", async () => {
+    // A marker describes an agreement about one file. `SYNCED_KEY` is keyed by
+    // the pack rather than by the repo, so kept, it would be compared against
+    // another repo's clock — the same failure, arriving from the other side.
+    device(at(MON, 3), agreed(MON));
+    stubApi(at(MON, 3));
+    const store = new SyncingStorage();
+    store.configure({ token: "t", owner: "me", repo: "other", path: "p.json", branch: "main" });
+
+    expect(store.hasLineage()).toBe(false);
+    expect(localStorage.getItem(SYNCED_KEY)).toBeNull();
+  });
+
+  it("does not throw its lineage away merely by opening", async () => {
+    // The constructor configures itself from what is stored, which is not a
+    // person naming a repo. Compared against the field rather than against the
+    // stored config, every launch looked like a change of repo.
+    device(at(MON, 3), agreed(MON));
+    stubApi(at(MON, 3));
+    expect(new SyncingStorage().hasLineage()).toBe(true);
+  });
+});
+
+describe("looking again when the tab comes back", () => {
+  it("takes what the other device pushed, without a word", async () => {
+    device(at(MON, 3), agreed(MON));
+    stubApi(at(TUE, 9));
+    const store = new SyncingStorage();
+    await store.checkRemote();
+
+    expect((await store.recheck(at(MON, 3))).kind).toBe("adopt");
+  });
+
+  it("holds for a while, so flicking between tabs is not a request each time", async () => {
+    device(at(MON, 3), agreed(MON));
+    stubApi(at(TUE, 9));
+    const store = new SyncingStorage();
+    await store.recheck(at(MON, 3));
+
+    expect((await store.recheck(at(MON, 3))).kind).toBe("current");
+  });
+
+  it("says nothing when sync is off", async () => {
+    localStorage.clear();
+    expect((await new SyncingStorage().recheck(at(MON, 3))).kind).toBe("current");
+  });
+});
+
 describe("the gate", () => {
   it("does not let a queued push out under a check that says adopt", async () => {
     // The push is armed on a four-second debounce and the check is a network

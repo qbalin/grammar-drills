@@ -34,7 +34,7 @@ import {
 import type { ParadigmIndex } from "./paradigm-index.js";
 import { useConfetti } from "./confetti/Confetti.js";
 import { profile } from "./pack.js";
-import type { SyncState, SyncConfig } from "./storage/sync.js";
+import type { StartupCheck, SyncState, SyncConfig } from "./storage/sync.js";
 import { SyncingStorage } from "./storage/sync.js";
 import {
   exportProgress,
@@ -1051,6 +1051,38 @@ export function App({ content, session, storage }: Props) {
       ),
     [storage],
   );
+
+  /*
+   * And the same question asked at a moment worth asking it.
+   *
+   * The two above are a check that runs once and a refusal that arrives in the
+   * middle of a question. Neither looks at GitHub while the app is sitting
+   * there, so an installed app left open for a week studies all of it against
+   * what the file held last Monday, and the first anybody hears of the phone is
+   * a sheet over the answer box.
+   *
+   * Coming back to the tab is the calm moment, and after the check learned to
+   * compare contents it is nearly always a silent one: a device that studied
+   * nothing while it was away holds what the remote holds and settles itself.
+   * It only speaks when the other device really did push and this one really
+   * does hold work of its own — which is the sheet's whole remit.
+   */
+  useEffect(() => {
+    if (!storage.currentConfig()) return;
+    const onShow = () => {
+      if (document.visibilityState !== "visible") return;
+      void storage.recheck(session.progress()).then((found) => {
+        if (found.kind === "adopt") adoptRemote(found.remote);
+        else if (found.kind === "diverged") {
+          setOverlay((showing) =>
+            asksAboutSync(showing) ? showing : { t: "conflict", remote: found.remote },
+          );
+        }
+      });
+    };
+    addEventListener("visibilitychange", onShow);
+    return () => removeEventListener("visibilitychange", onShow);
+  }, [session, storage]);
 
   /**
    * The reward. It comes at the end of a round of questions rather than on a
@@ -2303,25 +2335,53 @@ export function App({ content, session, storage }: Props) {
    * repo about anything, so there is no honest way to guess whose it is. The
    * "a question people learn to dismiss" argument does not apply: naming a repo
    * happens once per device, not once per morning.
+   *
+   * All of which is about **Connect**, and this is also **Update** — the same
+   * button, relabelled once a config exists (`Settings.tsx`). Update is what
+   * you press to paste a reissued token, and it used to raise that sheet every
+   * time, because a device that has synced always finds a file up there. So the
+   * question people learned to dismiss was this one, and its wording ("this
+   * device has never synced with that repo") was false in the case it was shown
+   * in. A named repo this device already agrees with goes through the ordinary
+   * check instead, and says nothing at all when there is nothing to say.
    */
   const configureSync = (cfg: SyncConfig | null) => {
+    // Read before `configure`, which is what ends the agreement when the file
+    // being named is a different one.
+    const known = storage.hasLineage();
     storage.configure(cfg);
     if (!cfg) {
       flash("Sync turned off.");
       return;
     }
     void storage
-      .fetchRemote()
-      .catch(() => null)
-      .then((remote) => {
-        const local = session.progress();
-        if (remote) {
-          setOverlay({ t: "overwrite", remote });
+      // The live copy, not the one the tab opened with: naming a repo happens
+      // an hour into a session, and this device's morning is what would be lost.
+      .checkAgainst(session.progress())
+      .catch((): StartupCheck => ({ kind: "current" }))
+      .then((found) => {
+        if (found.kind === "adopt") {
+          adoptRemote(found.remote);
           return;
         }
-        // An empty repo has nothing to lose, so no force is wanted: the storage
-        // lets a first file through on its own.
-        return storage.saveNow(local).then(() => flash("Connected to GitHub."));
+        if (found.kind === "diverged") {
+          // Two sheets, one question, and which is honest depends on whether
+          // this device has ever agreed with the file now being named.
+          // `configure` has already ended the agreement if the file named is a
+          // different one, so what is left is exactly the honest distinction.
+          setOverlay(
+            storage.hasLineage()
+              ? { t: "conflict", remote: found.remote }
+              : { t: "overwrite", remote: found.remote },
+          );
+          return;
+        }
+        // Nothing up there, or nothing to choose between. An empty repo has
+        // nothing to lose, so no force is wanted: the storage lets a first file
+        // through on its own.
+        return storage
+          .saveNow(session.progress())
+          .then(() => flash(known ? "Sync settings saved." : "Connected to GitHub."));
       });
   };
 
