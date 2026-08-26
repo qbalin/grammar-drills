@@ -818,9 +818,8 @@ describe("the answer trail", () => {
     const user = userEvent.setup();
     mount();
 
-    // The em dash tells the disclosure from the grammar sheet's ↺, which is
-    // labelled "Earlier answers" too and is the long way round to the same
-    // thing.
+    // The em dash tells the disclosure from the trail's own heading, which
+    // reads "Earlier answers" too wherever a sheet draws one.
     const trail = () =>
       screen.queryByRole("button", { name: /Earlier answers —/ });
     const expanded = () => trail()?.getAttribute("aria-expanded");
@@ -3858,6 +3857,45 @@ describe("reading on", () => {
     await user.click(within(topic).getByRole("button", { name: /^Practise/ }));
 
     expect(screen.getByText("The master frees the slave.")).toBeDefined();
+  });
+
+  it("offers no shortcut from the page to what was written on the topic", async () => {
+    /*
+     * The reader's head used to carry a ↺ beside the bookmark, opening the
+     * topic's answer trail in a sheet over the page. It was the long way round
+     * to something that is now on the screen where the question is asked — the
+     * graded screen's own disclosure — and it wore the same glyph as the status
+     * bar's undo, two presses apart and meaning different things.
+     *
+     * So the head is the mark about the page you are on and the arrow off it,
+     * and nothing else.
+     */
+    const user = userEvent.setup();
+    const { session } = mount();
+    // An answer on the record, so there is a trail for a shortcut to lead to.
+    await user.type(screen.getByLabelText("Your Latin"), "Puella rosa amat.");
+    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.click(screen.getByRole("button", { name: /Hard/ }));
+    await carryOn(user);
+    expect(session.attemptsFor("decl1")).toHaveLength(1);
+
+    // Read the topic just answered. Not through `read` above, which starts by
+    // closing the sheet a fresh mount opens on and there is none here.
+    await user.click(screen.getByRole("button", { name: "Grammar index" }));
+    const map = screen.getByRole("dialog", { name: "Grammar index" });
+    await user.click(within(map).getByRole("button", { name: /First declension/ }));
+    await user.click(screen.getByRole("button", { name: /Read §/ }));
+
+    const sheet = screen.getByRole("dialog", { name: "First declension" });
+    expect(
+      within(sheet).getByRole("button", { name: "Bookmark First declension" }),
+    ).toBeDefined();
+    expect(
+      within(sheet).getByRole("button", { name: "Study First declension" }),
+    ).toBeDefined();
+    expect(
+      within(sheet).queryByRole("button", { name: /Earlier answers/ }),
+    ).toBeNull();
   });
 
   it("bookmarks the section being read, and the index has it", async () => {

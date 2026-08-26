@@ -273,9 +273,11 @@ terminal), and the first is the one the **hint** offers: a step before the revea
 that shows the *English* half of a sentence and nothing else, which is very often
 the whole of what was missing and costs none of the answer.
 
-Turn it off in Settings — `a` in the terminal's vocabulary list — and words are
-recorded alone. The preference travels with your progress, so it holds on both
-surfaces; sentences already saved stay where they are.
+There is no switch for turning this off, and there used to be one. A sentence
+you do not want comes off the card by hand, from the card itself — a decision
+about the line in front of you rather than a standing preference, which was the
+blunter of the two instruments and the reason a card could end up bare with
+nothing on it to say why.
 
 ### And the page it came off
 
@@ -453,6 +455,16 @@ and the moment it is wanted is the moment you are mid-sentence and stuck. The
 word count is taken from the sentence, so `Vocabulary — 6 words` is on screen and
 honest while the dictionary is still downloading — and opening it is what
 triggers that download, never a prefetch.
+
+**What you have written on the topic before** is a disclosure in the same
+place. Seeing the reference answer is the moment "have I written this before,
+and what did I write?" is worth asking, so the trail is on the screen that asks
+it, and on the topic's own sheet where everything else about a topic lives. It
+is no longer in the **reader**: the head there used to carry a shortcut to it
+beside the bookmark, which was the long way round to something now under your
+thumb and wore the same ↺ as the undo two presses away in the status bar. The
+head is the mark about the page you are on and the arrow off it, and nothing
+else.
 
 The dictionary is every word the reference holds — 55,312 Latin lemmas over
 893,854 inflected forms, not merely the ones a corpus attests. That distinction

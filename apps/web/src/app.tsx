@@ -67,12 +67,7 @@ import {
 } from "./screens/Study.js";
 import { GrammarSheet } from "./screens/Grammar.js";
 import { InspectSheet } from "./screens/Inspect.js";
-import {
-  AttemptTrail,
-  EarlierAnswers,
-  MapSheet,
-  TopicSheet,
-} from "./screens/Map.js";
+import { EarlierAnswers, MapSheet, TopicSheet } from "./screens/Map.js";
 import { QuestionSheet, QuestionsSheet } from "./screens/Questions.js";
 import { ScheduleSheet } from "./screens/Schedule.js";
 import { SettingsSheet } from "./screens/Settings.js";
@@ -156,7 +151,6 @@ type Overlay =
   | { t: "grammar"; sectionId: string; ref?: string; back?: Overlay }
   | { t: "map" }
   | { t: "topic"; sectionId: string; back?: Overlay }
-  | { t: "attempts"; sectionId: string }
   | { t: "questions"; sectionId: string }
   | { t: "question"; sectionId: string; prompt: string }
   | { t: "schedule" }
@@ -3111,7 +3105,6 @@ export function App({ content, session, storage }: Props) {
             const at = sections.findIndex((s) => s.id === overlay.sectionId);
             const sec = sections[at];
             if (!sec) return null;
-            const earlier = session.attemptsFor(overlay.sectionId);
             return (
               <GrammarSheet
                 section={sec}
@@ -3162,19 +3155,6 @@ export function App({ content, session, storage }: Props) {
                   )
                 }
                 onClose={() => setOverlay(overlay.back ?? null)}
-                action={
-                  earlier.length > 0 ? (
-                    <button
-                      className="iconbtn"
-                      aria-label="Earlier answers"
-                      onClick={() =>
-                        setOverlay({ t: "attempts", sectionId: overlay.sectionId })
-                      }
-                    >
-                      ↺
-                    </button>
-                  ) : undefined
-                }
               />
             );
           })()}
@@ -3341,21 +3321,6 @@ export function App({ content, session, storage }: Props) {
               />
             );
           })()}
-
-        {overlay?.t === "attempts" && (
-          <Sheet
-            title="Earlier answers"
-            subtitle={content.getSection(overlay.sectionId)?.title}
-            onClose={() => setOverlay({ t: "grammar", sectionId: overlay.sectionId })}
-          >
-            <AttemptTrail
-              attempts={session.attemptsFor(overlay.sectionId)}
-              onMark={markPast(overlay.sectionId)}
-              onHoldWord={holdPastWord(overlay.sectionId)}
-              onInspectWord={inspectWord}
-            />
-          </Sheet>
-        )}
 
         {overlay?.t === "vocab-input" && (
           <VocabSheet

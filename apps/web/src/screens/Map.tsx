@@ -879,10 +879,10 @@ export function AttemptTrail({
  * The same trail, folded away on the graded screen.
  *
  * Seeing the reference answer is the moment "have I written this before, and
- * what did I write?" is worth asking, and until now the answer was two sheets
- * away — grammar, then its ↺. It is a disclosure rather than a sheet for the
- * reason the vocabulary crib is: what it is being compared against is on this
- * screen, and a sheet would cover it.
+ * what did I write?" is worth asking, and it used to be two sheets away. This
+ * is where it is asked, so this is where the trail lives — and it is a
+ * disclosure rather than a sheet for the reason the vocabulary crib is: what it
+ * is being compared against is on this screen, and a sheet would cover it.
  *
  * Closed by default, and closed again on every new question. The trail is a
  * reference, not part of the question.

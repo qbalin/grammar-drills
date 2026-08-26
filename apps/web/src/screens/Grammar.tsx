@@ -91,7 +91,6 @@ function useSwipe(onTurn: (dir: Turn) => void) {
 export function GrammarSheet({
   section,
   onClose,
-  action,
   prev,
   next,
   onPage,
@@ -104,7 +103,6 @@ export function GrammarSheet({
 }: {
   section: GrammarSection;
   onClose: () => void;
-  action?: React.ReactNode;
   /** The sections either side in book order; absent at the two ends. */
   prev?: GrammarSection;
   next?: GrammarSection;
@@ -201,8 +199,8 @@ export function GrammarSheet({
       trail
       action={
         <>
-          {/* The mark before the two ways onward: it is about the page you are
-              on, and they are both about leaving it. */}
+          {/* The mark before the way onward: it is about the page you are on,
+              and the arrow is about leaving it. */}
           {onBookmark && (
             <button
               className={`iconbtn${bookmarked ? " iconbtn--marked" : ""}`}
@@ -217,7 +215,6 @@ export function GrammarSheet({
               <BookmarkIcon on={!!bookmarked} />
             </button>
           )}
-          {action}
           {onStudy && (
             <button
               className="iconbtn iconbtn--go"
