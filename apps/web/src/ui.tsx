@@ -13,9 +13,37 @@ import {
   sentenceTokens,
   type Emphasis,
   type Marks,
+  type QuestionSource,
   type Rating,
 } from "@lang-tutor/core";
 import { profile } from "./pack.js";
+
+/**
+ * Who a sentence is quoted from, wherever one is drawn.
+ *
+ * One rendering, because a citation written out in every screen that draws a
+ * quoted line is as many chances for one of them to be the odd one out — the
+ * answer under study, the question bank, a kept sentence, the list of them, and
+ * now the back of a vocabulary card. The em dash, the italic work and the bare
+ * locus are the same everywhere by construction rather than by everybody
+ * remembering.
+ *
+ * Nothing at all where nobody can be credited, which is most questions: a
+ * generated sentence has no author, and the absence is the honest encoding of
+ * that rather than a gap to be filled with the pack's name.
+ */
+export function Attribution({ source }: { source?: QuestionSource }) {
+  if (!source) return null;
+  // A span rather than a div, because one of the five places is a list row and
+  // a button may not contain a div. The stylesheet gives it `display: block`, so
+  // it stacks under the sentence wherever it is drawn.
+  return (
+    <span className="attribution">
+      — {source.author}, <cite>{source.work}</cite>
+      {source.locus ? ` ${source.locus}` : ""}
+    </span>
+  );
+}
 
 /**
  * What marks an element as holding the language being learnt.

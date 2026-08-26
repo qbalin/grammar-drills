@@ -31,6 +31,7 @@ import {
   type NewVocabContext,
   type Progress,
   type Question,
+  type QuestionSource,
   type Rating,
   type RoundVia,
   type SentenceCardState,
@@ -633,6 +634,11 @@ export function App({ session, content, storage }: Props) {
       // word held on the phone keeping its topic while the same word typed here
       // did not would be the two of them disagreeing about a card.
       ...(sectionId ? { sectionId } : {}),
+      // The credit, handed over as it stands, as the phone hands it over:
+      // whether it may be kept — it may not, on a sentence the student wrote —
+      // is `VocabDeck.addVocabContext`'s to say, so the two surfaces cannot
+      // drift apart on the rule.
+      ...(question.source ? { attribution: question.source } : {}),
     };
   };
 
@@ -2283,15 +2289,37 @@ function QuestionView({
             <Text color="green">{question.answer}</Text>
           </Text>
           {question.note && <Text dimColor>{question.note}</Text>}
-          {question.source && (
-            <Text dimColor>
-              {"            "}— {question.source.author}, {question.source.work}
-              {question.source.locus ? ` ${question.source.locus}` : ""}
-            </Text>
-          )}
+          <Attribution source={question.source} indent={"            "} />
         </Box>
       )}
     </Box>
+  );
+}
+
+/**
+ * Who a sentence is quoted from, in the one form the terminal draws it.
+ *
+ * Three screens print this — the answer just graded, a kept sentence, and now
+ * the back of a vocabulary card — and a citation written three ways is three
+ * chances for one of them to be the odd one out. `indent` is for the graded
+ * screen alone, whose lines are laid out under a twelve-column stub.
+ *
+ * Nothing at all where nobody can be credited, which is most questions: a
+ * generated sentence has no author, and the silence says so.
+ */
+function Attribution({
+  source,
+  indent = "",
+}: {
+  source?: QuestionSource;
+  indent?: string;
+}) {
+  if (!source) return null;
+  return (
+    <Text dimColor>
+      {indent}— {source.author}, {source.work}
+      {source.locus ? ` ${source.locus}` : ""}
+    </Text>
   );
 }
 
@@ -2360,12 +2388,7 @@ function SentenceReview({
               <Text dimColor>{card.note}</Text>
             </Box>
           )}
-          {card.source && (
-            <Text dimColor>
-              — {card.source.author}, {card.source.work}
-              {card.source.locus ? ` ${card.source.locus}` : ""}
-            </Text>
-          )}
+          <Attribution source={card.source} />
         </>
       )}
     </Box>
@@ -2457,6 +2480,10 @@ function VocabReview({
                     {c.source === "submitted" ? "  (you wrote)" : ""}
                   </Text>
                   <ContextSentence context={c} />
+                  {/* Who wrote it, where anybody did: the line that made the
+                      word stick is often a line of Livy's, and a back that drew
+                      it anonymously threw away half of what it had kept. */}
+                  <Attribution source={c.attribution} />
                 </Box>
               ))}
               {contexts.length > shown.length && (
@@ -2519,8 +2546,9 @@ function ContextList({
               {`${on ? "▸ " : "  "}${c.prompt}`}
               <Text dimColor>{c.source === "submitted" ? "  (you wrote)" : ""}</Text>
             </Text>
-            <Box paddingLeft={2}>
+            <Box paddingLeft={2} flexDirection="column">
               <ContextSentence context={c} />
+              <Attribution source={c.attribution} />
             </Box>
           </Box>
         );

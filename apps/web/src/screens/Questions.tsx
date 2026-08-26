@@ -1,10 +1,5 @@
-import type {
-  AttemptMarks,
-  BankedQuestion,
-  GrammarSection,
-  QuestionSource,
-} from "@lang-tutor/core";
-import { Sheet, ago, l2Attrs } from "../ui.js";
+import type { AttemptMarks, BankedQuestion, GrammarSection } from "@lang-tutor/core";
+import { Attribution, Sheet, ago, l2Attrs } from "../ui.js";
 import { AttemptTrail, type HoldPastWord } from "./Map.js";
 
 /**
@@ -23,21 +18,6 @@ import { AttemptTrail, type HoldPastWord } from "./Map.js";
  */
 
 const RATING_WORD = ["", "again", "hard", "good", "easy"];
-
-/**
- * Who an answer is quoted from, where one is quoted. The same credit the study
- * screen prints under the answer, and here for the same reason: read as a list,
- * a bank is a mix of sentences written for this app and sentences somebody
- * wrote two thousand years ago, and only one of them can be attributed.
- */
-function Attribution({ source }: { source: QuestionSource }) {
-  return (
-    <span className="attribution">
-      — {source.author}, <cite>{source.work}</cite>
-      {source.locus ? ` ${source.locus}` : ""}
-    </span>
-  );
-}
 
 /** What has been written on this question, in a line. */
 function trailLabel(q: BankedQuestion): string {
@@ -84,7 +64,10 @@ export function QuestionsSheet({
               <span className="row__main">
                 <span className="row__title">{q.prompt}</span>
                 <span className="row__answer">{q.answer}</span>
-                {q.source && <Attribution source={q.source} />}
+                {/* Read as a list, a bank is a mix of sentences written for
+                    this app and sentences somebody wrote two thousand years
+                    ago, and only one of the two can be attributed. */}
+                <Attribution source={q.source} />
                 <span className="row__sub">{trailLabel(q)}</span>
               </span>
               <span className="row__chev">›</span>
@@ -134,7 +117,7 @@ export function QuestionSheet({
             {question.answer}
           </div>
           {question.note && <div className="note">{question.note}</div>}
-          {question.source && <Attribution source={question.source} />}
+          <Attribution source={question.source} />
         </div>
       </div>
 

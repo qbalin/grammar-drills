@@ -279,6 +279,22 @@ export interface VocabContext {
    */
   index?: number;
   /**
+   * Who wrote the sentence, where anybody can be credited for it.
+   *
+   * A copy of the quoted question's own `source`, taken the way the sentence
+   * and the prompt are copies: the questions are generated content and can be
+   * rebuilt under a card saved months ago, so a card that pointed back at one
+   * for its credit would lose it. The reason it is worth keeping is the reason
+   * the sentence is — the line that made `manus` stick is a line of Livy's, and
+   * a card that drew it anonymously threw away half of what it is.
+   *
+   * On reference sentences only, and absent on the great majority even of
+   * those: a generated sentence has no author to name, and one the student
+   * wrote is theirs however closely it follows the book. Attributing what they
+   * typed to Cicero would be the same defect as drawing it as the reference.
+   */
+  attribution?: QuestionSource;
+  /**
    * When it was attached, ISO. The context's identity, as `at` is an attempt's
    * — the array position, the one thing an id could otherwise be, is exactly
    * what reordering makes mutable.

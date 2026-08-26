@@ -2494,6 +2494,102 @@ describe("a vocabulary card that remembers where the word was met", () => {
     expect(document.querySelector(".word--b")?.textContent).toBe("rosam");
   });
 
+  /**
+   * Who wrote the line, kept with the line.
+   *
+   * The reason a word stuck is usually the sentence it was read in, which is
+   * why the card keeps one at all — and where that sentence is somebody's, the
+   * name is half of what was kept. The card used to take the words and drop the
+   * credit, so `manus` came back attached to an anonymous line that a screen
+   * two taps away was attributing to Caesar.
+   */
+  describe("the credit on a quoted sentence", () => {
+    const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+    /** The fixture's first topic, asking a quoted question instead. */
+    const quoted: ContentData = {
+      ...fixture,
+      tests: {
+        ...fixture.tests,
+        decl1: [
+          {
+            id: "decl1-q1",
+            sectionId: "decl1",
+            questions: [
+              {
+                prompt: "The girl loves the rose.",
+                answer: "Puella rosam amat.",
+                kind: "translate-en-la" as const,
+                vocab: [],
+                source: cite,
+              },
+            ],
+          },
+        ],
+      },
+    };
+
+    it("comes back on the card, under the sentence it belongs to", async () => {
+      const user = userEvent.setup();
+      mount(undefined, quoted);
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await holdWord("rosam");
+      await user.click(screen.getByRole("button", { name: "Review" }));
+      await user.click(screen.getByRole("button", { name: "Show" }));
+
+      // The work in italics and the locus bare, as every other screen prints it.
+      const credit = document.querySelector(".attribution");
+      expect(credit?.textContent).toBe("— Caesar, de Bello Gallico i, 1");
+      expect(credit?.querySelector("cite")?.textContent).toBe("de Bello Gallico");
+    });
+
+    it("is on the sentence in the card's own list too", async () => {
+      // The same sentence read in two places, and a credit on one of them only
+      // would read as a card that had lost it.
+      const user = userEvent.setup();
+      mount(undefined, quoted);
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await holdWord("rosam");
+
+      await user.click(screen.getByRole("button", { name: "Edit" }));
+      const sheet = screen.getByRole("dialog", { name: "Edit word" });
+      expect(sheet.querySelector(".attribution")?.textContent).toContain(
+        "Caesar",
+      );
+    });
+
+    it("never lands on a line the student wrote", async () => {
+      // Their own sentence is theirs however closely it follows the book, and
+      // Caesar's name on it would be the same defect as the "You wrote" label
+      // going missing.
+      const user = userEvent.setup();
+      const { session } = mount(undefined, quoted);
+      await user.type(screen.getByLabelText("Your Latin"), "Puella rosam amābat.");
+      await user.click(screen.getByRole("button", { name: "Submit" }));
+
+      await holdWordIn(".compare__block", "rosam");
+      expect(session.vocabContexts("v-rosa")[0]?.source).toBe("submitted");
+      expect(session.vocabContexts("v-rosa")[0]?.attribution).toBeUndefined();
+
+      await user.click(screen.getByRole("button", { name: "Review" }));
+      await user.click(screen.getByRole("button", { name: "Show" }));
+      expect(screen.getByText("You wrote")).toBeDefined();
+      expect(document.querySelector(".attribution")).toBeNull();
+    });
+
+    it("says nothing on a sentence nobody can be credited for", async () => {
+      // Which is most of them: a generated sentence has no author, and a line
+      // naming the pack instead would be on every card in the deck.
+      const user = userEvent.setup();
+      mount();
+      await user.click(screen.getByRole("button", { name: "Reveal" }));
+      await holdWord("rosam");
+      await user.click(screen.getByRole("button", { name: "Review" }));
+      await user.click(screen.getByRole("button", { name: "Show" }));
+
+      expect(document.querySelector(".attribution")).toBeNull();
+    });
+  });
+
   it("offers the English of the sentence as a hint, and never the Latin", async () => {
     const user = userEvent.setup();
     await reviewOne(user);

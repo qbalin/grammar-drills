@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { SentenceCardState } from "@lang-tutor/core";
-import { Sentence, Sheet, l2Attrs, until } from "../ui.js";
+import { Attribution, Sentence, Sheet, l2Attrs, until } from "../ui.js";
 import { fold } from "../pack.js";
 
 /**
@@ -80,12 +80,7 @@ export function SentenceListSheet({
                   <div className="context__prompt">
                     <Sentence text={c.prompt} marks={c.marks?.prompt} />
                   </div>
-                  {c.source && (
-                    <div className="attribution">
-                      — {c.source.author}, <cite>{c.source.work}</cite>
-                      {c.source.locus ? ` ${c.source.locus}` : ""}
-                    </div>
-                  )}
+                  <Attribution source={c.source} />
                   {/* The sheet's own two-step, not the link row's: there is room
                       for a pair of buttons here, so this takes the shape every
                       other deletion on a sheet has. */}

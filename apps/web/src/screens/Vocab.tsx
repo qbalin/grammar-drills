@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { LemmaEntry, VocabCardState, VocabContext } from "@lang-tutor/core";
 import { fold, profile } from "../pack.js";
-import { Sentence, Sheet, Spinner, ago, l2Attrs, until } from "../ui.js";
+import { Attribution, Sentence, Sheet, Spinner, ago, l2Attrs, until } from "../ui.js";
 
 /**
  * Recording an unknown word.
@@ -586,6 +586,10 @@ function ContextRow({
           marks={context.index === undefined ? undefined : { [context.index]: 1 }}
         />
       </div>
+      {/* As the card back draws it. A sentence read here and read in review is
+          the same sentence, and a credit on one of the two only would read as a
+          card that had lost it. */}
+      <Attribution source={context.attribution} />
       {confirmDelete ? (
         <div className="actions">
           <button className="btn" onClick={() => setConfirmDelete(false)}>

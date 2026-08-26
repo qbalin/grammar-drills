@@ -215,7 +215,27 @@ export class VocabDeck {
       return "duplicate";
     }
     if (held.length >= MAX_CONTEXTS) return "full";
-    card.contexts = [...held, { ...context, at: this.freeStamp(held, now) }];
+    /*
+     * The credit belongs to the reference and to nothing else. A sentence the
+     * student wrote is theirs however closely it follows the book, and filing
+     * it under the author's name would be the same defect as drawing it as the
+     * reference — which is the distinction `source` exists to keep.
+     *
+     * Decided here rather than in the two surfaces that build a context, so the
+     * phone and the terminal cannot drift apart on it — each of them hands over
+     * whatever the question carried and this is what says whether it may be
+     * kept. Taken off rather than overwritten with `undefined`: a field a card
+     * has no answer for is absent on disk, everywhere else in this file.
+     */
+    const { attribution, ...rest } = context;
+    card.contexts = [
+      ...held,
+      {
+        ...rest,
+        ...(attribution && context.source === "answer" ? { attribution } : {}),
+        at: this.freeStamp(held, now),
+      },
+    ];
     this.touch();
     return "added";
   }

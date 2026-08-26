@@ -568,8 +568,8 @@ span.status__title {
    rather than part of the Latin — the student's eye should land on the answer
    and find this afterwards. */
 .attribution {
-  /* A span where a list row carries it — a button may not contain a div — and
-     a div on the study screen. Told to stack either way. */
+  /* Always a span — one of the places that draws it is a list row, and a button
+     may not contain a div — so it is told to stack. */
   display: block;
   font-size: 0.9rem;
   color: var(--text-faint);

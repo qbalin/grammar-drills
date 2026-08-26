@@ -246,6 +246,7 @@ noun · feminine · declension 4
 Reference
   The soldiers raised their hands.
   Mīlitēs manūs sustulērunt.
+                                  — Livy, Ab Urbe Condita xxi, 1
 ```
 
 Which sentence depends on where the press landed. A word held in the **reference
@@ -253,6 +254,16 @@ answer**, or a row held in the vocabulary crib, keeps the reference; a word held
 in **what you wrote** keeps your own line, labelled as yours — it may be wrong,
 and a card that drew it as the book's would teach the mistake back to you. The
 word you held is picked out in it.
+
+Where the sentence is a **quoted** one, the card keeps the credit too — the
+author, the work and the locus, drawn under the line exactly as the study screen
+draws it, in the review, in the card's own list of sentences, and in the
+terminal. Half of what a quoted line is worth is knowing whose it is, and the
+card used to take the words and leave the name behind. It rides on the reference
+and on nothing else: a sentence you wrote is yours however closely it follows
+the book, and `VocabDeck.addVocabContext` is where that is decided, so the phone
+and the terminal cannot drift apart on it. Most cards say nothing here, because
+most sentences are generated and have no author to name.
 
 A word met in several questions gathers several sentences, up to eight, and
 identical ones are not kept twice — an answer typed correctly folds equal to the

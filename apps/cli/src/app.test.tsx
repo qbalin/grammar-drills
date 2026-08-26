@@ -1416,6 +1416,52 @@ describe("the sentence a recorded word was met in", () => {
     app.unmount();
   });
 
+  it("keeps the credit with the reference, and never with their own line", async () => {
+    // The same rule the phone keeps, met from the other surface: the credit is
+    // a fact about the quoted line, and a sentence the student typed is theirs
+    // however closely it follows the book.
+    const cite = { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" };
+    const quoted: ContentData = {
+      ...fixture,
+      tests: {
+        ...fixture.tests,
+        "ag-decl1": [
+          {
+            id: "ag-decl1-q1",
+            sectionId: "ag-decl1",
+            questions: [
+              {
+                prompt: "The girl loves the rose.",
+                answer: "puella rosam amat",
+                kind: "translate-en-la" as const,
+                vocab: ["puella", "rosam", "amat"],
+                source: cite,
+              },
+            ],
+          },
+        ],
+      },
+    };
+    const content = new Content(quoted, testProfile);
+    const session = studying(content);
+    const app = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+    await until(app.lastFrame, "The girl loves the rose.");
+    await press(app.stdin, app.lastFrame, "puella rosa amat");
+    await press(app.stdin, app.lastFrame, "\r", "your answer puella rosa amat");
+
+    await record({ ...app, session }, "amat", "Saved: amō");
+    expect(session.vocabContexts("v-amo")[0]?.attribution).toEqual(cite);
+
+    // `rosa` stands only in what they wrote, so that is the sentence kept —
+    // and Caesar's name does not go on it.
+    await record({ ...app, session }, "rosa", "Saved: rosa, rosae (f)");
+    expect(session.vocabContexts("v-rosa")[0]?.source).toBe("submitted");
+    expect(session.vocabContexts("v-rosa")[0]?.attribution).toBeUndefined();
+    app.unmount();
+  });
+
   it("keeps what the student wrote when only that has the word", async () => {
     const app = await graded();
     await record(app, "rosa", "Saved: rosa, rosae (f)");
@@ -1561,6 +1607,62 @@ describe("the hint on a vocabulary card", () => {
     await press(stdin, lastFrame, " ", "manus, manūs (f)");
     expect(lastFrame()).toContain("where you met it");
     expect(lastFrame()).toContain("puella rosam amat");
+    unmount();
+  });
+});
+
+/**
+ * The credit a quoted line carries, on the back of the word it taught.
+ *
+ * A card kept on the phone arrives here with its sentence and, where anybody
+ * wrote that sentence, with the name — so the terminal draws it for the reason
+ * it draws the kept sentence's own: the attribution is half of what a quoted
+ * line is, and a back that dropped it left the student looking at an anonymous
+ * sentence the study screen had just credited to Caesar.
+ */
+describe("who wrote the sentence on a vocabulary card", () => {
+  const context = {
+    prompt: "The girl loves the rose.",
+    sentence: "puella rosam amat",
+    source: "answer" as const,
+    index: 1,
+  };
+
+  it("names the author and the locus under the sentence", async () => {
+    const content = new Content(fixture, testProfile);
+    const session = studying(content);
+    const id = session.recordVocab(content.lookup("manibus")[0]!);
+    session.addVocabContext(id, {
+      ...context,
+      attribution: { author: "Caesar", work: "de Bello Gallico", locus: "i, 1" },
+    });
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+
+    await until(lastFrame, "Vocabulary review");
+    // Behind the reveal with the rest of the back: the front is the meaning.
+    expect(lastFrame()).not.toContain("Caesar");
+
+    await press(stdin, lastFrame, " ", "where you met it");
+    expect(lastFrame()).toContain("— Caesar, de Bello Gallico i, 1");
+    unmount();
+  });
+
+  it("says nothing where nobody can be credited", async () => {
+    // Which is most cards: a generated sentence has no author.
+    const content = new Content(fixture, testProfile);
+    const session = studying(content);
+    const id = session.recordVocab(content.lookup("manibus")[0]!);
+    session.addVocabContext(id, context);
+    const { lastFrame, stdin, unmount } = render(
+      <App session={session} content={content} storage={new MemoryStorage()} />,
+    );
+
+    await until(lastFrame, "Vocabulary review");
+    await press(stdin, lastFrame, " ", "where you met it");
+    expect(lastFrame()).toContain("puella rosam amat");
+    expect(lastFrame()).not.toContain("—");
     unmount();
   });
 });

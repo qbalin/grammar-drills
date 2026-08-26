@@ -834,6 +834,45 @@ describe("Session vocabulary: the sentence a word was met in", () => {
     expect(s.vocabContexts(id)[0]?.index).toBeUndefined();
   });
 
+  /**
+   * The credit on a quoted line, which is half of why that line is worth
+   * keeping: `manus` stuck because of a sentence somebody wrote, and a card
+   * that kept the sentence and dropped the name kept half of it.
+   */
+  describe("who wrote it", () => {
+    const cicero = { author: "Cicero", work: "In Catilinam", locus: "1.1" };
+
+    it("keeps the author and the locus with the reference", () => {
+      const { s, id } = start();
+      s.addVocabContext(id, { ...reference, attribution: cicero }, now);
+      expect(s.vocabContexts(id)[0]?.attribution).toEqual(cicero);
+    });
+
+    it("does not put an author's name on what the student wrote", () => {
+      // The same defect as drawing their line as the reference, which the
+      // label beside it exists to prevent — a sentence of their own is theirs
+      // however closely it follows the book.
+      const { s, id } = start();
+      s.addVocabContext(
+        id,
+        { ...reference, source: "submitted", attribution: cicero },
+        now,
+      );
+      const [kept] = s.vocabContexts(id);
+      expect(kept?.source).toBe("submitted");
+      // Absent rather than emptied: a field a card has no answer for is not
+      // written down at all.
+      expect(kept && "attribution" in kept).toBe(false);
+    });
+
+    it("says nothing about a sentence nobody can be credited for", () => {
+      // Which is most of them: a generated sentence has no author.
+      const { s, id } = start();
+      s.addVocabContext(id, reference, now);
+      expect(s.vocabContexts(id)[0]?.attribution).toBeUndefined();
+    });
+  });
+
   it("will not relabel what the student wrote as the reference", () => {
     const { s, id } = start();
     s.addVocabContext(id, { ...reference, source: "submitted" }, now);

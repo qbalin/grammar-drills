@@ -9,6 +9,7 @@ import {
   type VocabContext,
 } from "@lang-tutor/core";
 import {
+  Attribution,
   Citation,
   comesBack,
   CopyButton,
@@ -311,12 +312,7 @@ export function Graded({
               />
             </div>
             {question.note && <div className="note">{question.note}</div>}
-            {question.source && (
-              <div className="attribution">
-                — {question.source.author}, <cite>{question.source.work}</cite>
-                {question.source.locus ? ` ${question.source.locus}` : ""}
-              </div>
-            )}
+            <Attribution source={question.source} />
           </div>
         </div>
         <p className="hint">
@@ -581,6 +577,13 @@ export function VocabReview({
                     onInspect={onInspectWord}
                   />
                 </div>
+                {/* Who wrote it, where anybody did. The line that made the word
+                    stick is often a line of Livy's, and a back that drew it
+                    anonymously was throwing away half of what it had kept — the
+                    same credit the answer wore on the screen the word was taken
+                    from. Nothing on a generated sentence, which has no author,
+                    or on one the student wrote, which is theirs. */}
+                <Attribution source={c.attribution} />
                 {/* Under the line rather than in the row of card actions at the
                     foot, because it belongs to this sentence and not to the
                     word: the next block may name a different page, and one link
@@ -705,12 +708,7 @@ export function SentenceReview({
                 />
               </div>
               {card.note && <div className="note">{card.note}</div>}
-              {card.source && (
-                <div className="attribution">
-                  — {card.source.author}, <cite>{card.source.work}</cite>
-                  {card.source.locus ? ` ${card.source.locus}` : ""}
-                </div>
-              )}
+              <Attribution source={card.source} />
               {/* Last in the block, under the attribution, because the two say
                   the same kind of thing in the same breath: who wrote the line,
                   and where the book teaches it. Inside the reveal — the topic

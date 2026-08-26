@@ -20,6 +20,7 @@ import {
   type Mode,
   type NewVocabContext,
   type Progress,
+  type QuestionSource,
   type Rating,
   type RoundVia,
   type ScheduleEntry,
@@ -1753,6 +1754,11 @@ export function App({ content, session, storage }: Props) {
    * own sentence, in an answer months old, or in a sentence kept from another
    * topic each belong to a page that is not the one being studied now. Passed in
    * by the one caller that knows, and left off where nobody does.
+   *
+   * `attribution` is a parameter for the same reason and comes from the same
+   * callers. Whether it may be *kept* is not decided here: a sentence the
+   * student wrote never carries one, and `VocabDeck.addVocabContext` says so,
+   * where the phone and the terminal cannot drift apart on it.
    */
   const contextOf = (
     prompt: string,
@@ -1760,6 +1766,7 @@ export function App({ content, session, storage }: Props) {
     source: "answer" | "submitted",
     index?: number,
     sectionId?: string,
+    attribution?: QuestionSource,
   ): NewVocabContext | undefined => {
     if (!sentence) return undefined;
     return {
@@ -1768,6 +1775,7 @@ export function App({ content, session, storage }: Props) {
       source,
       ...(index === undefined || index < 0 ? {} : { index }),
       ...(sectionId ? { sectionId } : {}),
+      ...(attribution ? { attribution } : {}),
     };
   };
 
@@ -1790,6 +1798,7 @@ export function App({ content, session, storage }: Props) {
           where,
           index,
           sectionId ?? undefined,
+          question.source,
         )
       : undefined;
 
@@ -1882,9 +1891,19 @@ export function App({ content, session, storage }: Props) {
    * undefined rather than picking up today's topic.
    */
   const holdSavedWord = (word: string, kept: VocabContext, index: number) =>
+    // The credit goes across for the reason the page does: it is a fact about
+    // the line, so a word first met in Livy is filed under Livy even though the
+    // card it is being lifted out of is a different word entirely.
     takeWord(
       word,
-      contextOf(kept.prompt, kept.sentence, kept.source, index, kept.sectionId),
+      contextOf(
+        kept.prompt,
+        kept.sentence,
+        kept.source,
+        index,
+        kept.sectionId,
+        kept.attribution,
+      ),
     );
 
   /**
@@ -1896,7 +1915,8 @@ export function App({ content, session, storage }: Props) {
    * about other lines entirely. Handing one of them over would file the word
    * under a sentence it does not stand in, so nothing is handed over, exactly
    * as `typedWordContext` hands nothing over when there is no question on
-   * screen. No page either, for the same reason: a citation came off no page.
+   * screen. No page either, for the same reason: a citation came off no page,
+   * and nobody is quoted for a dictionary's line about a word.
    *
    * Holding the card's own headword therefore finds the card already there and
    * says so rather than doubling it. An oblique form — the `rosae` of `rosa,
@@ -1920,6 +1940,11 @@ export function App({ content, session, storage }: Props) {
    * answers were given on is the screen drawing them. Four sheets draw a trail,
    * and each names its own rather than the round the student happens to be on,
    * which is very often a different topic or none at all.
+   *
+   * No credit, and no way to curry one: an attempt keeps the two texts and not
+   * the source, so there is nobody on the record here to name. Guessing one out
+   * of today's bank would be attributing a months-old line to whatever question
+   * now happens to read like it.
    */
   const holdPastWord =
     (sectionId?: string) =>
@@ -2941,12 +2966,16 @@ export function App({ content, session, storage }: Props) {
                   onHoldWord={(word, i) =>
                     takeWord(
                       word,
+                      // The kept sentence carries both the page and the credit
+                      // already, so the vocabulary card made out of it keeps
+                      // the same two.
                       contextOf(
                         card.prompt,
                         card.answer,
                         "answer",
                         i,
                         card.sectionId,
+                        card.source,
                       ),
                     )
                   }
